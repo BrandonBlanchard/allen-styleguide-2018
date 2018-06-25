@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %} {% page_attribute "page_title" %} {% endblock title %}
+
+{% block content %}
+    <h1>Landing Page</h1>
+
+    <script>
+        window.content = `{% placeholder "content" %}`;
+    </script>
+    
+{% endblock content %}
+
+{% static_placeholder "footer"}
