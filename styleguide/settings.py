@@ -139,7 +139,6 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'styleguide',
-    'menu_external_url'
 )
 
 LANGUAGES = (

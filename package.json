@@ -1,0 +1,26 @@
+{
+  "name": "styleguide",
+  "version": "0.0.1",
+  "description": "Allen Institute styleguide 2018",
+  "main": "none",
+  "scripts": {
+    "start":"python manage.py runserver",
+    "flush": "python manage.py flush",
+    "django-help": "python manage.py help",
+    "new-user": "python manage.py createsuperuser",
+    "migrate": "python manage.py migrate",
+    "make-migrations": "python manage.py makemigrations"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://stash.corp.alleninstitute.org/scm/aib/styleguide2018.git"
+  },
+  "keywords": [
+    "styleguide",
+    "allen",
+    "institute",
+    "blinkux"
+  ],
+  "author": "Brandon Blanchard",
+  "license": "ISC"
+}
