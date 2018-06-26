@@ -1,0 +1,12 @@
+/***************************
+This acts as a manifest file for scss files and exists becuase webpack 
+does not support wildcard entry points.
+
+Usage: 
+Import any scss files you want included in the main bundle below. 
+
+---> Please keep this ordered alphabetically <---
+
+***************************/
+
+@import 'typography.scss';

@@ -4,6 +4,10 @@
     <head>
         <title>{% block title %} Allen Institute Brain Map {% endblock title %}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <script type="text/javascript" src="/static/build/site.js"></script>
+        <link rel="stylesheet" href="/static/build/site.css"></link>
+
         <style type="text/css">
             .nav {
                 padding-left: 0;
@@ -26,7 +30,9 @@
                 width: 20%;
             }
         </style>
-        {% render_block "css" %}
+
+    {% render_block "css" %}
+
     </head>
     <body>
         {% cms_toolbar %}

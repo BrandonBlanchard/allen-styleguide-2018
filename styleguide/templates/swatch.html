@@ -1,0 +1,16 @@
+<script>
+    window.data = window.data || {};
+    window.data.plugins = window.data.plugins || [];
+    window.data.plugins.push({
+        type: 'swatch',
+        
+    })
+</script>
+
+
+<div>
+    <div style="background-color: #{{ instance.color }}; width: 240px; height: 50px; float: left; margin-right: 20px;"></div>
+    <p>{{ instance.color }}</p>
+    <p>{{ instance.name }}</p>
+    <p>{{ instance.sass_name }}</p>
+</div>

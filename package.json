@@ -4,12 +4,12 @@
   "description": "Allen Institute styleguide 2018",
   "main": "none",
   "scripts": {
-    "start":"python manage.py runserver",
+    "start": "python manage.py runserver & webpack",
     "flush": "python manage.py flush",
     "django-help": "python manage.py help",
     "new-user": "python manage.py createsuperuser",
     "migrate": "python manage.py migrate",
-    "make-migrations": "python manage.py makemigrations"
+    "make-migrations": "python manage.py makemigrations styleguide"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,19 @@
     "blinkux"
   ],
   "author": "Brandon Blanchard",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^2.1.5"
+  }
 }
