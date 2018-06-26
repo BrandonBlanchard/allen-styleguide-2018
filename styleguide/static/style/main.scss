@@ -9,4 +9,6 @@ Import any scss files you want included in the main bundle below.
 
 ***************************/
 
-@import 'typography.scss';
+@import 'color-swatch';
+@import 'normalize';
+@import 'typography';

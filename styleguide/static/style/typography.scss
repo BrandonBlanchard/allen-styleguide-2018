@@ -1,31 +1,134 @@
 /*****************
 Typography
-
-typographic styles go here.
-
 *****************/
+@import 'variables';
 
+@font-face {
+    font-family: 'roboto';
+    src: url('/static/font/Roboto-Regular.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('/static/font/Roboto-Medium.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('/static/font/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+
+// These names match the ones found in the blink ux doc "Typography 2"
+
+@mixin DisplayHeaderLarge {
+    font-family: $fontPrimary;
+    font-size: $fontSizeXXXL;
+    line-height: 1.2;
+    color: $colorNavyMedium;
+}
+
+@mixin TitleMediumBold {
+    // AvenirNext-Demibold / 26px
+    font-family: $fontPrimary;
+    font-size: $fontSizeXL;
+    font-weight: $fontPrimaryBold;
+    line-height: 1.23;
+    color: $colorNavyMedium;
+}
+
+@mixin TitleMedium {
+    // AvenirNext-Medium / 26px
+    font-family: $fontPrimary;
+    font-size: $fontSizeXL;
+    font-weight: $fontPrimaryMedium;
+    line-height: 1.23;
+    color: $colorNavyMedium;
+}
+
+@mixin TitleSmallUppercase {
+    // Roboto-Bold / 16px
+    font-family: $fontSecondary;
+    font-size: $fontSizeM;
+    font-weight: $fontSecondaryBold;
+    line-height: 1.25;
+    color: $colorNavyMedium;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+@mixin TitleSmall {
+    // Roboto-Bold / 16px
+    font-family: $fontSecondary;
+    font-size: $fontSizeM;
+    font-weight: $fontSecondaryBold;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    color: $colorNavyMedium;
+}
+
+@mixin BodyLarge {
+    // Roboto-Regular / 16px
+    font-family: $fontSecondary;
+    font-size: $fontSizeL;
+    font-weight: $fontSecondaryRegular;
+    line-height: 1.65;
+    letter-spacing: 0.3px;
+    color: $colorNavyMedium;
+}
+
+@mixin BodyMedium {
+    // Roboto-Regular / 14px
+    font-family: $fontSecondary;
+    font-size: $fontSizeS;
+    font-weight: $fontSecondaryRegular;
+    line-height: 1.71;
+    letter-spacing: 0.3px;
+    color: $colorNavyMedium;
+}
+
+@mixin DescriptionSmall {
+    // Roboto-Regular / 14px
+    font-family: $fontSecondary;
+    font-size: $fontSizeXL;
+    font-weight: $fontSecondaryRegular;
+    line-height: 1.43;
+    letter-spacing: 0.3px;
+    color: $colorNavyMedium;
+}
+
+@mixin CaptionSmall {
+    // Roboto-Regular / 12px;
+    font-family: $fontSecondary;
+    font-size: $fontSizeXS;
+    font-weight: $fontSecondaryRegular;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    color: $colorNavyMedium;
+}
 
 h1 {
- color: blue;
+    @include DisplayHeaderLarge();
 }
 
 h2 {
-    color: red;
 }
 
 h3 {
-
+    
 }
 
 h4 {
-
+    @include TitleSmall();
 }
 
 h5 {
 
 }
 
-label, p, span, div {
-
+label, p {
+    margin-top: 0;
+    margin-bottom: 8px;
 }

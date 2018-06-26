@@ -1,0 +1,91 @@
+/****************************************************************
+
+    Naming conventions!
+
+    camelCase
+
+    prefix everything with its type, ie:
+
+    $colorBrand: #003056;
+    $fontPrimary: avenir;
+    $fontSizeM: 12px;
+    
+    Nothing in here should be component specific. Don't add things like $panelBGDark, instead
+    use one of the predefined colors like $colorNavyBlue or something.
+
+    Thanks!
+
+*****************************************************************/
+
+// Fonts
+$fontPrimary: 'avenir next', sans-serif;
+$fontSecondary: 'roboto', sans-serif;
+
+
+$fontPrimaryRegular: 400;
+// Medium
+$fontPrimaryMedium: 500;
+// Demibold
+$fontPrimaryBold: 600;
+
+$fontSecondaryRegular: 500;
+$fontSecondaryMedium: 600;
+$fontSecondaryBold: 700;
+
+// Font size
+$fontSizeXXXL: 50px;
+$fontSizeXXL: 40px;
+$fontSizeXL: 26px;
+$fontSizeL: 17px;
+$fontSizeM: 16px;
+$fontSizeS: 14px;
+$fontSizeXS: 12px;
+
+// Colors
+
+// Primary brand colors
+$colorBrand: #003056;
+$colorBrandLight: #60a7e5;
+$colorBrandGrey: #7e7d7e;
+$colorBrandYellow: #ffe800;
+$colorBrandGreen: #64a869;
+
+$colorRed: #ff3300;
+
+// Color sets //
+// Mostly for buttons
+$colorBlueLight: #90c2ed;
+$colorBlueMedium: #60a7e5; 
+$colorBlueDark: #5392ca;
+
+// Mostly for buttons
+$colorGreenLight: #93c396;
+$colorGreenMedium: #64a869;
+$colorGreenDark: #4f8553;
+
+// Mostly for buttons
+$colorYellowLight: #ffe800;
+$colorYellowMedium: #ffee4c;
+$colorYellowDark: #e6d100;
+
+// Mostly for buttons
+$colorNavyLight: #616770;
+$colorNavyMedium: #1c2532;
+$colorNavyDark: #05070a;
+
+$colorGreyLight: #a4a4a4;
+$colorGreyMedium: #777c84;
+$colorGreyDark: #646364;
+
+// Background Colors // 
+$colorBackgroundLight: #f3f4f5;
+
+// Divider colors (borders)
+$colorSlate: #333b47;
+$colorCream: #e8e9ea;
+
+// Text colors
+$colorTextDark: #777c84;
+$colorTextLight: #a4a7ad;
+
+$colorLight: #fff;
