@@ -18,3 +18,13 @@ class FlexContainer(CMSPlugin):
         ('space-around','space-around'))
     
     spacing = models.CharField(choices = CONTAINER_SPACING_TYPES, default = 'flex-start', max_length = 13)
+
+
+class ContentSection(CMSPlugin):
+    CONTAINER_BACKGROUNDS = (
+        ('#1c2532','navy'),
+        ('#f3f4f5', 'light'),
+        ('#ffffff', 'white')
+    )
+
+    background_color = models.CharField(choices = CONTAINER_BACKGROUNDS, default = 'white', max_length = 20)

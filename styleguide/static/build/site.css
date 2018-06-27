@@ -66,7 +66,8 @@ h1 {
   font-family: "avenir next", sans-serif;
   font-size: 50px;
   line-height: 1.2;
-  color: #1c2532; }
+  color: #1c2532;
+  font-weight: 400; }
 
 h4 {
   font-family: "roboto", sans-serif;
@@ -102,8 +103,188 @@ label, p {
   display: inline-block;
   margin-right: 10px; }
 
+.flex-container {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: row wrap; }
+
+/**********************
+Layout
+
+This file contains various layout options. Things like full width page containers that shrink to a minimum size,
+full width content sections, sidebars, etc. 
+
+***********************/
+.container--full-width {
+  width: 100%;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0; }
+
+.section--full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0 20px; }
+
+.section__content {
+  max-width: 100%;
+  width: 1300px;
+  margin: 0 auto; }
+
+/****************************************************************
+
+    Naming conventions!
+
+    camelCase
+
+    prefix everything with its type, ie:
+
+    $colorBrand: #003056;
+    $fontPrimary: avenir;
+    $fontSizeM: 12px;
+    
+    Nothing in here should be component specific. Don't add things like $panelBGDark, instead
+    use one of the predefined colors like $colorNavyBlue or something.
+
+    Thanks!
+
+*****************************************************************/
+/*****************
+Typography
+*****************/
+/****************************************************************
+
+    Naming conventions!
+
+    camelCase
+
+    prefix everything with its type, ie:
+
+    $colorBrand: #003056;
+    $fontPrimary: avenir;
+    $fontSizeM: 12px;
+    
+    Nothing in here should be component specific. Don't add things like $panelBGDark, instead
+    use one of the predefined colors like $colorNavyBlue or something.
+
+    Thanks!
+
+*****************************************************************/
+@font-face {
+  font-family: 'roboto';
+  src: url("/static/font/Roboto-Regular.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("/static/font/Roboto-Medium.ttf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("/static/font/Roboto-Bold.ttf");
+  font-weight: 700; }
+
+h1 {
+  font-family: "avenir next", sans-serif;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #1c2532;
+  font-weight: 400; }
+
+h4 {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  color: #1c2532; }
+
+label, p {
+  margin-top: 0;
+  margin-bottom: 8px; }
+
+.navigation-container {
+  width: 100%;
+  background-color: #1c2532;
+  border: 1px solid #333b47;
+  color: #a4a7ad;
+  text-decoration: none; }
+
+.navigation {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  border: 1px solid #333b47;
+  border-width: 0 1px; }
+
+.navigation-container > .navigation > .child > a {
+  font-family: "avenir next", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.23;
+  color: #1c2532;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  width: 193px;
+  height: 80px;
+  padding: 32px 0;
+  border: 1px solid #333b47;
+  border-width: 0 1px 0 1px; }
+
+.navigation-container > .navigation > .child {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  padding: 0; }
+
+.navigation ul {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0; }
+
+.navigation .child {
+  list-style-type: none; }
+  .navigation .child > a {
+    display: block;
+    text-decoration: none;
+    height: 80px;
+    padding: 32px 25px;
+    font-family: "avenir next", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.23;
+    color: #1c2532;
+    color: #a4a7ad;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color ease-in-out 300ms; }
+    .navigation .child > a:hover {
+      color: #fff; }
+
+.navigation .child.selected {
+  border-bottom: 5px solid #60a7e5; }
+
 * {
   box-sizing: border-box; }
+
+body, html {
+  padding: 0;
+  margin: 0; }
 
 /*****************
 Typography
@@ -145,7 +326,8 @@ h1 {
   font-family: "avenir next", sans-serif;
   font-size: 50px;
   line-height: 1.2;
-  color: #1c2532; }
+  color: #1c2532;
+  font-weight: 400; }
 
 h4 {
   font-family: "roboto", sans-serif;
@@ -159,22 +341,101 @@ label, p {
   margin-top: 0;
   margin-bottom: 8px; }
 
-.flex-container {
+/****************************************************************
+
+    Naming conventions!
+
+    camelCase
+
+    prefix everything with its type, ie:
+
+    $colorBrand: #003056;
+    $fontPrimary: avenir;
+    $fontSizeM: 12px;
+    
+    Nothing in here should be component specific. Don't add things like $panelBGDark, instead
+    use one of the predefined colors like $colorNavyBlue or something.
+
+    Thanks!
+
+*****************************************************************/
+/*****************
+Typography
+*****************/
+/****************************************************************
+
+    Naming conventions!
+
+    camelCase
+
+    prefix everything with its type, ie:
+
+    $colorBrand: #003056;
+    $fontPrimary: avenir;
+    $fontSizeM: 12px;
+    
+    Nothing in here should be component specific. Don't add things like $panelBGDark, instead
+    use one of the predefined colors like $colorNavyBlue or something.
+
+    Thanks!
+
+*****************************************************************/
+@font-face {
+  font-family: 'roboto';
+  src: url("/static/font/Roboto-Regular.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("/static/font/Roboto-Medium.ttf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("/static/font/Roboto-Bold.ttf");
+  font-weight: 700; }
+
+h1 {
+  font-family: "avenir next", sans-serif;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #1c2532;
+  font-weight: 400; }
+
+h4 {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  color: #1c2532; }
+
+label, p {
+  margin-top: 0;
+  margin-bottom: 8px; }
+
+.blog-post__header-container {
+  padding: 0 20px;
   width: 100%;
-  overflow-x: hidden;
-  display: flex;
-  flex-flow: row wrap; }
+  margin-top: 0;
+  background-color: #1c2532;
+  padding: 20px 0; }
 
-/**********************
-Layout
-
-This file contains various layout options. Things like full width page containers that shrink to a minimum size,
-full width content sections, sidebars, etc. 
-
-***********************/
-.container--full-width {
+.blog-post__header {
   max-width: 100%;
   width: 1300px;
   min-width: 280px;
   margin: 0 auto; }
+
+.blog-post__title {
+  font-family: "avenir next", sans-serif;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #1c2532;
+  font-weight: 400;
+  color: #fff;
+  margin: 0; }
+
+.blog-post__author {
+  color: #a4a7ad; }
 

@@ -2,48 +2,27 @@
 <!doctype html>
 <html>
     <head>
-        <title>{% block title %} Allen Institute Brain Map {% endblock title %}</title>
+        <title>{% block title %} Allen Institute Styleguide 2018 {% endblock title %}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <script type="text/javascript" src="/static/build/site.js"></script>
         <link rel="stylesheet" href="/static/build/site.css"></link>
+        {% render_block "css" %}
 
-        <style type="text/css">
-            .nav {
-                padding-left: 0;
-            }
-            .nav li {
-                display: inline;
-                list-style-type: none;
-                padding-right: 20px;
-            }
-            .container {
-                width: 940px;
-                margin: 0 auto
-            }
-            .content {
-                float: left;
-                width: 80%;
-            }
-            .sidebar {
-                float: left;
-                width: 20%;
-            }
-        </style>
-
-    {% render_block "css" %}
-
-    </head>
-    <body>
-        {% cms_toolbar %}
-        <div class="container--full-width">
-            <ul class="nav">
+</head>
+<body>
+    {% cms_toolbar %}
+    <div class="container--full-width">
+        <div class="navigation-container">
+            <ul class="navigation">
                 {% show_menu 0 100 100 100 %}
             </ul>
-            {% block content %}{% endblock content %}
         </div>
+            {% block content %} {% endblock content %}
+        </div>
+        
         {% static_placeholder "footer" %}
+        
         {% render_block "js" %}
-
+        <script type="text/javascript" src="/static/build/site.js"></script>
     </body>
 </html>

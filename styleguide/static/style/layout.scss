@@ -8,15 +8,23 @@ full width content sections, sidebars, etc.
 
 
 .container--full-width {
-    max-width: 100%;
-    width: 1300px;
-    min-width: 280px;
+    width: 100%;
+    min-width: $siteMinWidth;
     
     margin: 0 auto;
+    padding: 0;
 }
 
 .section--full-width {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+}
 
+.section__content {
+    max-width: 100%;
+    width: $siteMaxWidth;
+    margin: 0 auto;
 }
 
 .section--constrained {
