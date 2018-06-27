@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'typography';
+
+.blog-post {
+
+}
+
+.blog-post__header-container {
+    padding: 0 20px;
+    width: 100%;
+    margin-top: 0;
+    background-color: $colorNavyMedium;
+    padding: 20px 0;
+}
+
+.blog-post__header {
+    max-width: 100%;
+    width: $siteMaxWidth;
+    min-width: $siteMinWidth;
+
+    margin: 0 auto;
+}
+
+.blog-post__title {
+    @include DisplayHeaderLarge;
+    color: $colorLight;
+    margin: 0;
+}
+
+.blog-post__author {
+    color: $colorTextLight;
+}

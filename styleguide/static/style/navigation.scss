@@ -1,0 +1,90 @@
+@import 'variables';
+@import 'typography';
+
+.navigation-container {
+    width: 100%;
+    background-color: $colorNavyMedium;
+    border: 1px solid $colorSlate;
+    
+    color: $colorTextLight;
+    text-decoration: none;
+}
+
+.navigation {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    max-width: $siteMaxWidth;
+    margin: 0 auto;
+    padding: 0;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+
+    border: 1px solid $colorSlate;
+    border-width: 0 1px;
+}
+
+// Site home
+.navigation-container > .navigation > .child > a {
+    @include TitleMediumBold();
+
+    color: $colorLight;
+    text-decoration: none;
+    text-align: center;
+    font-size: $fontSizeL;
+    text-transform: uppercase;
+
+    width: 193px;
+    height: 80px;
+    padding: 32px 0;
+
+    border: 1px solid $colorSlate;
+    border-width: 0 1px 0 1px;
+}
+
+// Root Element and it's children <a> <ul>
+.navigation-container > .navigation > .child {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+
+.navigation ul {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+
+    margin: 0;
+    padding: 0;
+}
+
+.navigation .child {
+    list-style-type: none;
+    
+    > a {
+        display: block;
+        text-decoration: none;
+        height: 80px;
+        padding: 32px 25px;
+
+        @include TitleMedium();
+        color: $colorTextLight;
+        text-decoration: none;
+        font-size: $fontSizeM;
+        transition: color ease-in-out 300ms;
+
+        &:hover {
+            color: $colorLight;
+        }
+    }
+}
+
+.navigation .child.selected {
+    border-bottom: 5px solid $colorBrandLight;
+}
