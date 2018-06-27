@@ -83,7 +83,8 @@ label, p {
 .color-swatch {
   font-family: "avenir next", sans-serif;
   font-weight: 400;
-  width: 240px; }
+  width: 240px;
+  margin-right: 20px; }
 
 .color-swatch__swatch {
   width: 100%;
@@ -157,4 +158,23 @@ h4 {
 label, p {
   margin-top: 0;
   margin-bottom: 8px; }
+
+.flex-container {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: row wrap; }
+
+/**********************
+Layout
+
+This file contains various layout options. Things like full width page containers that shrink to a minimum size,
+full width content sections, sidebars, etc. 
+
+***********************/
+.container--full-width {
+  max-width: 100%;
+  width: 1300px;
+  min-width: 280px;
+  margin: 0 auto; }
 
