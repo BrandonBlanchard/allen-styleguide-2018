@@ -1,0 +1,31 @@
+{% load cms_tags %}
+
+<div class="hero-banner">
+    <div class="hero-banner__content">
+        <div class="circle-outline--1"></div>
+        <div class="circle-outline--2"></div>
+        <div class="hero-banner__thick-line--top-left"></div>
+        <div class="hero-banner__thick-line--bottom-right"></div>
+        <div class="hero-banner__thin-line--bottom-left"></div>
+        <div class="hero-banner__thin-line--bottom-right"></div>
+        
+        <div class="hero-banner__collage-circle--top-left">
+            <img src="{{ instance.TopLeftImageCircle.url }}" alt="One of four images exemplifying Allen Institute data">
+        </div>
+   
+        <div class="hero-banner__collage-circle--top-right">
+            <img src="{{ instance.TopRightImageCircle.url }}" alt="One of four images exemplifying Allen Institute data">
+        </div>
+   
+        <div class="hero-banner__collage-circle--bottom-left">
+            <img src="{{ instance.BottomLeftImageCircle.url }}" alt="One of four images exemplifying Allen Institute data">
+        </div>
+   
+        <div class="hero-banner__collage-circle--bottom-right">
+            <img src="{{ instance.BottomRightImageCircle.url }}" alt="One of four images exemplifying Allen Institute data">
+        </div>
+        <div class="hero-banner__hero-copy">
+            {{instance.HeroText}}
+        </div>
+    </div>
+</div>
