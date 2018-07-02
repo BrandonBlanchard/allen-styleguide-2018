@@ -1,4 +1,5 @@
 from cms.models.pluginmodel import CMSPlugin
+from filer.fields.image import FilerImageField
 
 from django.db import models
 
@@ -28,3 +29,11 @@ class ContentSection(CMSPlugin):
     )
 
     background_color = models.CharField(choices = CONTAINER_BACKGROUNDS, default = 'white', max_length = 20)
+
+class HeroBanner(CMSPlugin):
+    TopLeftImageCircle = FilerImageField(null=True, blank=True, related_name="top_left_image", on_delete=models.SET_NULL)
+    TopRightImageCircle = FilerImageField(null=True, blank=True, related_name="top_right_image", on_delete=models.SET_NULL)
+    BottomRightImageCircle = FilerImageField(null=True, blank=True, related_name="bottom_left_image", on_delete=models.SET_NULL)
+    BottomLeftImageCircle = FilerImageField(null=True, blank=True, related_name="bottom_right_image", on_delete=models.SET_NULL)
+
+    HeroText = models.CharField(max_length=140, default="Accelerating progress toward understanding the brain.")

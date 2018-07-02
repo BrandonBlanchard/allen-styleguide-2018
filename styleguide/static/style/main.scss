@@ -9,10 +9,11 @@ Import any scss files you want included in the main bundle below.
 
 ***************************/
 
+@import 'blog-post';
 @import 'color-swatch';
 @import 'flex-container';
+@import 'hero-banner';
 @import 'layout';
 @import 'navigation';
 @import 'normalize';
 @import 'typography';
-@import 'blog-post';
