@@ -33,13 +33,14 @@ $fontSecondaryMedium: 600;
 $fontSecondaryBold: 700;
 
 // Font size
-$fontSizeXXXL: 50px;
-$fontSizeXXL: 40px;
-$fontSizeXL: 26px;
-$fontSizeL: 17px;
+$fontSizeXXXL: 3.125rem;
+$fontSizeXXL: 2.5rem;
+$fontSizeXL: 1.625rem;
+$fontSizeL: 1.0625rem;
+// Baseline font size / 1rem / do not convert to rems
 $fontSizeM: 16px;
-$fontSizeS: 14px;
-$fontSizeXS: 12px;
+$fontSizeS: 0.875rem;
+$fontSizeXS: 0.75rem;
 
 // Colors
 
@@ -92,10 +93,10 @@ $colorTextLight: #a4a7ad;
 $colorLight: #fff;
 
 // Widths / Sizes
-$siteMaxWidth: 1300px;
-$siteMinWidth: 280px;
+$siteMaxWidth: 81.25rem;
+$siteMinWidth: 17.5rem;
 
 // Breakpoint widths
 // These should progress downward i.e. desktop first
-$sizeTablet: 770px;
-$sizeMobile: 430px;
+$sizeTablet: 48.125rem;
+$sizeMobile: 26.875rem;

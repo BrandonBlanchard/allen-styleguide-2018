@@ -5,16 +5,16 @@
     font-family: $fontPrimary;
     font-weight: $fontPrimaryRegular;
     
-    margin-right: 20px;
-    width: 240px;
+    margin-right: 1.25rem;
+    width: 15rem;
 
     flex-basis: 1;
 }
 
 .color-swatch__swatch {
     width: 100%;
-    height: 50px;
-    margin-bottom: 10px;
+    height: 3.125rem;
+    margin-bottom: 0.625rem;
 }
 
 .color-swatch__sass-name,
@@ -22,5 +22,5 @@
     @include CaptionSmall();
 
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }

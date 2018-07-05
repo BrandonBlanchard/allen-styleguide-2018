@@ -5,7 +5,7 @@
     width: 100%;
     background-color: $colorNavyMedium;
     z-index: 1;
-    height: 518px;
+    height: 32.375rem;
     
     // parallax 
     perspective: 1px;
@@ -14,7 +14,7 @@
     z-index: 1;
 
     @include Tablet {
-        height: 430px;
+        height: 26.875rem;
     }
 }
 
@@ -22,7 +22,7 @@
     max-width: 100%;
     width: $siteMaxWidth;
     min-width: $siteMinWidth;
-    height: 518px;
+    height: 32.375rem;
 
     margin: 0 auto;
     position: relative;
@@ -36,8 +36,8 @@
     position: absolute;
     z-index: 50;
     
-    width: 167px;
-    height: 167px;
+    width: 10.4375rem;
+    height: 10.437rem;
     border-radius: 50%;
     border: 1px solid $colorLightBlue;
 
@@ -50,15 +50,15 @@
 .circle-outline--1 {
     @extend .circle-outline;
     
-    top: 82px;
-    left: 7px;
+    top: 5.125rem;
+    left: 0.4375rem;
 }
 
 .circle-outline--2 {
     @extend .circle-outline;
 
-    top: 160px;
-    left: 648px;
+    top: 10rem;
+    left: 40.5rem;
 
     @include Tablet {
         display: none;
@@ -68,10 +68,10 @@
 .hero-banner__thick-line--top-left {
     position: absolute;
     top: 0px;
-    left: -757px;
+    left: -47.3125rem;
     
-    width: 800px;
-    height: 5px;
+    width: 50rem;
+    height: 0.3125rem;
     transform: rotate(29deg);
 
     background-color: $colorBrandLight;
@@ -85,11 +85,11 @@
 
 .hero-banner__thick-line--bottom-right {
     position: absolute;
-    top: 485px;
-    left: 310px;
+    top: 30.3125rem;
+    left: 19.375rem;
 
-    width: 400px;
-    height: 5px;
+    width: 25rem;
+    height: 0.3125rem;
     transform: rotate(29deg);
 
     background-color: $colorBrandLight;
@@ -104,10 +104,10 @@
 .hero-banner__thin-line--bottom-left {
     position: absolute;
     top: 0px;
-    left: -2050px;
+    left: -128.125rem;
 
-    width: 2285px;
-    height: 5px;
+    width: 142.8125rem;
+    height: 0.3125rem;
     transform: rotate(22deg);
 
     background-color: $colorLightBlue;
@@ -121,11 +121,11 @@
 
 .hero-banner__thin-line--bottom-right {
     position: absolute;
-    top: 493px;
-    left: 216px;
+    top: 30.8125rem;
+    left: 13.5rem;
 
-    width: 200px;
-    height: 5px;
+    width: 12.5rem;
+    height: 0.3125rem;
     transform: rotate(22deg);
 
     background-color: $colorLightBlue;
@@ -139,7 +139,7 @@
 
 .hero-banner__collage-circle {
     position: absolute;
-    $scale: 290px;
+    $scale: 18.125rem;
 
     width: $scale;
     height: $scale;
@@ -157,8 +157,8 @@
     }
 
     @include Tablet {
-        height: 210px;
-        width: 210px;
+        height: 13.125rem;
+        width: 13.125rem;
     }
 }
 
@@ -166,81 +166,81 @@
 .hero-banner__collage-circle--top-left {
     @extend .hero-banner__collage-circle;
     
-    top: 40px;
-    left: 864px;
+    top: 2.5rem;
+    left: 54rem;
 
     @include Tablet {
-        left: 360px;
+        left: 22.5rem;
     }
 
     @include Mobile {
-        left: 40px;
+        left: 2.5rem;
     }
 }
 
 .hero-banner__collage-circle--top-right {
     @extend .hero-banner__collage-circle;
 
-    top: 40px;
-    left: 1198px;
+    top: 2.5rem;
+    left: 74.875rem;
 
     @include Tablet {
-        left: 620px;
+        left: 38.75rem;
     }
 
     @include Mobile {
-        left: 280px;
+        left: 17.5rem;
     }
 }
 
 .hero-banner__collage-circle--bottom-left {
     @extend .hero-banner__collage-circle;
 
-    width: 240px;
-    height: 240px;
+    width: 15rem;
+    height: 15rem;
 
-    top: 338px;
-    left: 754px;
+    top: 21.125rem;
+    left: 47.125rem;
 
     @include  Tablet {
-        width: 210px;
-        height: 210px;
+        width: 13.125rem;
+        height: 13.125rem;
         
-        top: 280px;
-        left: 220px;
+        top: 17.5rem;
+        left: 13.75rem;
     }
 
     @include Mobile {
-        width: 180px;
-        height: 180px;
+        width: 11.25rem;
+        height: 11.25rem;
 
-        left: -60px;
+        left: -3.75rem;
     }
 }
 
 .hero-banner__collage-circle--bottom-right {
     @extend .hero-banner__collage-circle;
 
-    width: 276px;
-    height: 276px;
+    width: 17.25rem;
+    height: 17.25rem;
 
-    top: 314px;
-    left: 1046px;
+    top: 19.625rem;
+    left: 65.375rem;
 
     @include Tablet {
-        width: 210px;
-        height: 210px;
+        width: 16.125;
+        height: 16.125;
         
-        left: 500px;
-        top: 280px;
+        left: 31.25rem;
+        top: 17.5rem;
     }
 
     @include Mobile {
-        width: 200px;
-        height: 200px;
+        width: 12.5rem;
+        height: 12.5rem;
 
-        top: 255px;
-        left: 170px;
+        top: 15.9375rem;
+        left: 10.625rem;
     }
 }
 
@@ -251,21 +251,21 @@
     
     position: absolute;
     
-    top: 170px;
-    left: 75px;
+    top: 10.625rem;
+    left: 4.68rem;
     
-    width: 550px;
-    height: 180px;
+    width: 34.375rem;
+    height: 11.25rem;
     
     z-index: 51;
 
     @include Tablet {
-        width: 216px;
-        height: 152px;
+        width: 16.5rem;
+        height: 9.5rem;
     }
 
     @include Mobile {
-        top: 218px;
-        left: 20px;
+        top: 13.625rem;
+        left: 1.25rem;
     }
 }

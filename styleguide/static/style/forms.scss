@@ -3,24 +3,45 @@
 
 
 
-@mixin ButtonPrimary {
-    padding: 13px 20px;
+@mixin buttonPrimary {
+
+    font-family: $fontSecondary;
+    font-weight: $fontSecondaryBold;
+    font-size: $fontSizeM;
+    letter-spacing: 0.01875rem;
+    line-height: 1.25;
+    text-align: center;
+
+    padding: 0.812rem 1.25rem;
     background-color: $colorBrandLight;
     color: $colorLight;
-
-    border-radius: 40px;
+    
+    border-radius: 2.5rem;
     border: none;
+
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+        background-color: $colorBlueDark;
+        outline: none;
+    }
+    
+    &:active {
+        background-color: $colorBlueLight;
+        outline: none;
+    }
 }
 
 input[type="email"] {
-    padding: 13px 20px;
-    border-radius: 20px;
+    padding: 0.8125rem 1.25rem;
+    border-radius: 1.25rem;
 
     border: 1px solid $colorBrandLight;
     background: transparent;
     color: $colorTextLight;
 
-    margin-right: 20px;
+    margin-right: 1.25rem;
     max-width: 100%;
 
     &:focus {

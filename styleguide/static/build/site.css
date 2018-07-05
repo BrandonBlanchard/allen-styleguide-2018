@@ -56,7 +56,7 @@ full width content sections, sidebars, etc.
 ***********************/
 .container--full-width {
   width: 100%;
-  min-width: 280px;
+  min-width: 17.5rem;
   margin: 0 auto;
   padding: 0; }
 
@@ -67,7 +67,7 @@ full width content sections, sidebars, etc.
 
 .section__content {
   max-width: 100%;
-  width: 1300px;
+  width: 81.25rem;
   margin: 40px auto; }
 
 /**********************
@@ -115,13 +115,13 @@ This defines our grid layout and how items within the grid should responde to ch
 *************************************/
 h1 {
   font-family: "avenir next", sans-serif;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     h1 {
-      font-size: 26px; } }
+      font-size: 1.625rem; } }
 
 h4 {
   font-family: "roboto", sans-serif;
@@ -133,32 +133,32 @@ h4 {
 
 label, p {
   margin-top: 0;
-  margin-bottom: 8px; }
+  margin-bottom: 0.5rem; }
 
 .blog-post__header-container {
-  padding: 0 20px;
+  padding: 0 1.25rem;
   width: 100%;
   margin-top: 0;
   background-color: #1c2532;
-  padding: 20px 0; }
+  padding: 1.25rem 0; }
 
 .blog-post__header {
   max-width: 100%;
-  width: 1300px;
-  min-width: 280px;
+  width: 81.25rem;
+  min-width: 17.5rem;
   margin: 0 auto; }
 
 .blog-post__title {
   font-family: "avenir next", sans-serif;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400;
   color: #fff;
   margin: 0; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     .blog-post__title {
-      font-size: 26px; } }
+      font-size: 1.625rem; } }
 
 .blog-post__author {
   color: #a4a7ad; }
@@ -211,7 +211,7 @@ full width content sections, sidebars, etc.
 ***********************/
 .container--full-width {
   width: 100%;
-  min-width: 280px;
+  min-width: 17.5rem;
   margin: 0 auto;
   padding: 0; }
 
@@ -222,7 +222,7 @@ full width content sections, sidebars, etc.
 
 .section__content {
   max-width: 100%;
-  width: 1300px;
+  width: 81.25rem;
   margin: 40px auto; }
 
 /**********************
@@ -270,13 +270,13 @@ This defines our grid layout and how items within the grid should responde to ch
 *************************************/
 h1 {
   font-family: "avenir next", sans-serif;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     h1 {
-      font-size: 26px; } }
+      font-size: 1.625rem; } }
 
 h4 {
   font-family: "roboto", sans-serif;
@@ -288,30 +288,30 @@ h4 {
 
 label, p {
   margin-top: 0;
-  margin-bottom: 8px; }
+  margin-bottom: 0.5rem; }
 
 .color-swatch {
   font-family: "avenir next", sans-serif;
   font-weight: 400;
-  margin-right: 20px;
-  width: 240px;
+  margin-right: 1.25rem;
+  width: 15rem;
   flex-basis: 1; }
 
 .color-swatch__swatch {
   width: 100%;
-  height: 50px;
-  margin-bottom: 10px; }
+  height: 3.125rem;
+  margin-bottom: 0.625rem; }
 
 .color-swatch__sass-name,
 .color-swatch__color-label {
   font-family: "roboto", sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.3px;
   color: #1c2532;
   display: inline-block;
-  margin-right: 10px; }
+  margin-right: 0.625rem; }
 
 /**********************
 Layout
@@ -322,7 +322,7 @@ full width content sections, sidebars, etc.
 ***********************/
 .container--full-width {
   width: 100%;
-  min-width: 280px;
+  min-width: 17.5rem;
   margin: 0 auto;
   padding: 0; }
 
@@ -333,7 +333,7 @@ full width content sections, sidebars, etc.
 
 .section__content {
   max-width: 100%;
-  width: 1300px;
+  width: 81.25rem;
   margin: 40px auto; }
 
 /**********************
@@ -408,7 +408,7 @@ full width content sections, sidebars, etc.
 ***********************/
 .container--full-width {
   width: 100%;
-  min-width: 280px;
+  min-width: 17.5rem;
   margin: 0 auto;
   padding: 0; }
 
@@ -419,7 +419,7 @@ full width content sections, sidebars, etc.
 
 .section__content {
   max-width: 100%;
-  width: 1300px;
+  width: 81.25rem;
   margin: 40px auto; }
 
 /**********************
@@ -467,13 +467,13 @@ This defines our grid layout and how items within the grid should responde to ch
 *************************************/
 h1 {
   font-family: "avenir next", sans-serif;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     h1 {
-      font-size: 26px; } }
+      font-size: 1.625rem; } }
 
 h4 {
   font-family: "roboto", sans-serif;
@@ -485,25 +485,25 @@ h4 {
 
 label, p {
   margin-top: 0;
-  margin-bottom: 8px; }
+  margin-bottom: 0.5rem; }
 
 .hero-banner {
   width: 100%;
   background-color: #1c2532;
   z-index: 1;
-  height: 518px;
+  height: 32.375rem;
   perspective: 1px;
   overflow: hidden;
   z-index: 1; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     .hero-banner {
-      height: 430px; } }
+      height: 26.875rem; } }
 
 .hero-banner__content {
   max-width: 100%;
-  width: 1300px;
-  min-width: 280px;
-  height: 518px;
+  width: 81.25rem;
+  min-width: 17.5rem;
+  height: 32.375rem;
   margin: 0 auto;
   position: relative;
   overflow: visible;
@@ -512,81 +512,81 @@ label, p {
 .circle-outline, .circle-outline--1, .circle-outline--2 {
   position: absolute;
   z-index: 50;
-  width: 167px;
-  height: 167px;
+  width: 10.4375rem;
+  height: 10.437rem;
   border-radius: 50%;
   border: 1px solid #30445B; }
-  @media (max-width: 430px) {
+  @media (max-width: 26.875rem) {
     .circle-outline, .circle-outline--1, .circle-outline--2 {
       display: none; } }
 
 .circle-outline--1 {
-  top: 82px;
-  left: 7px; }
+  top: 5.125rem;
+  left: 0.4375rem; }
 
 .circle-outline--2 {
-  top: 160px;
-  left: 648px; }
-  @media (max-width: 770px) {
+  top: 10rem;
+  left: 40.5rem; }
+  @media (max-width: 48.125rem) {
     .circle-outline--2 {
       display: none; } }
 
 .hero-banner__thick-line--top-left {
   position: absolute;
   top: 0px;
-  left: -757px;
-  width: 800px;
-  height: 5px;
+  left: -47.3125rem;
+  width: 50rem;
+  height: 0.3125rem;
   transform: rotate(29deg);
   background-color: #60a7e5;
   z-index: 25; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     .hero-banner__thick-line--top-left {
       display: none; } }
 
 .hero-banner__thick-line--bottom-right {
   position: absolute;
-  top: 485px;
-  left: 310px;
-  width: 400px;
-  height: 5px;
+  top: 30.3125rem;
+  left: 19.375rem;
+  width: 25rem;
+  height: 0.3125rem;
   transform: rotate(29deg);
   background-color: #60a7e5;
   z-index: 25; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     .hero-banner__thick-line--bottom-right {
       display: none; } }
 
 .hero-banner__thin-line--bottom-left {
   position: absolute;
   top: 0px;
-  left: -2050px;
-  width: 2285px;
-  height: 5px;
+  left: -128.125rem;
+  width: 142.8125rem;
+  height: 0.3125rem;
   transform: rotate(22deg);
   background-color: #30445B;
   z-index: 25; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     .hero-banner__thin-line--bottom-left {
       display: none; } }
 
 .hero-banner__thin-line--bottom-right {
   position: absolute;
-  top: 493px;
-  left: 216px;
-  width: 200px;
-  height: 5px;
+  top: 30.8125rem;
+  left: 13.5rem;
+  width: 12.5rem;
+  height: 0.3125rem;
   transform: rotate(22deg);
   background-color: #30445B;
   z-index: 25; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     .hero-banner__thin-line--bottom-right {
       display: none; } }
 
 .hero-banner__collage-circle, .hero-banner__collage-circle--top-left, .hero-banner__collage-circle--top-right, .hero-banner__collage-circle--bottom-left, .hero-banner__collage-circle--bottom-right {
   position: absolute;
-  width: 290px;
-  height: 290px;
+  width: 18.125rem;
+  height: 18.125rem;
   border-radius: 50%;
   overflow: hidden;
   opacity: 0.75;
@@ -594,90 +594,90 @@ label, p {
   .hero-banner__collage-circle > img, .hero-banner__collage-circle--top-left > img, .hero-banner__collage-circle--top-right > img, .hero-banner__collage-circle--bottom-left > img, .hero-banner__collage-circle--bottom-right > img {
     width: 100%;
     height: 100%; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     .hero-banner__collage-circle, .hero-banner__collage-circle--top-left, .hero-banner__collage-circle--top-right, .hero-banner__collage-circle--bottom-left, .hero-banner__collage-circle--bottom-right {
-      height: 210px;
-      width: 210px; } }
+      height: 13.125rem;
+      width: 13.125rem; } }
 
 .hero-banner__collage-circle--top-left {
-  top: 40px;
-  left: 864px; }
-  @media (max-width: 770px) {
+  top: 2.5rem;
+  left: 54rem; }
+  @media (max-width: 48.125rem) {
     .hero-banner__collage-circle--top-left {
-      left: 360px; } }
-  @media (max-width: 430px) {
+      left: 22.5rem; } }
+  @media (max-width: 26.875rem) {
     .hero-banner__collage-circle--top-left {
-      left: 40px; } }
+      left: 2.5rem; } }
 
 .hero-banner__collage-circle--top-right {
-  top: 40px;
-  left: 1198px; }
-  @media (max-width: 770px) {
+  top: 2.5rem;
+  left: 74.875rem; }
+  @media (max-width: 48.125rem) {
     .hero-banner__collage-circle--top-right {
-      left: 620px; } }
-  @media (max-width: 430px) {
+      left: 38.75rem; } }
+  @media (max-width: 26.875rem) {
     .hero-banner__collage-circle--top-right {
-      left: 280px; } }
+      left: 17.5rem; } }
 
 .hero-banner__collage-circle--bottom-left {
-  width: 240px;
-  height: 240px;
-  top: 338px;
-  left: 754px; }
-  @media (max-width: 770px) {
+  width: 15rem;
+  height: 15rem;
+  top: 21.125rem;
+  left: 47.125rem; }
+  @media (max-width: 48.125rem) {
     .hero-banner__collage-circle--bottom-left {
-      width: 210px;
-      height: 210px;
-      top: 280px;
-      left: 220px; } }
-  @media (max-width: 430px) {
+      width: 13.125rem;
+      height: 13.125rem;
+      top: 17.5rem;
+      left: 13.75rem; } }
+  @media (max-width: 26.875rem) {
     .hero-banner__collage-circle--bottom-left {
-      width: 180px;
-      height: 180px;
-      left: -60px; } }
+      width: 11.25rem;
+      height: 11.25rem;
+      left: -3.75rem; } }
 
 .hero-banner__collage-circle--bottom-right {
-  width: 276px;
-  height: 276px;
-  top: 314px;
-  left: 1046px; }
-  @media (max-width: 770px) {
+  width: 17.25rem;
+  height: 17.25rem;
+  top: 19.625rem;
+  left: 65.375rem; }
+  @media (max-width: 48.125rem) {
     .hero-banner__collage-circle--bottom-right {
-      width: 210px;
-      height: 210px;
-      left: 500px;
-      top: 280px; } }
-  @media (max-width: 430px) {
+      width: 16.125;
+      height: 16.125;
+      left: 31.25rem;
+      top: 17.5rem; } }
+  @media (max-width: 26.875rem) {
     .hero-banner__collage-circle--bottom-right {
-      width: 200px;
-      height: 200px;
-      top: 255px;
-      left: 170px; } }
+      width: 12.5rem;
+      height: 12.5rem;
+      top: 15.9375rem;
+      left: 10.625rem; } }
 
 .hero-banner__hero-copy {
   font-family: "avenir next", sans-serif;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400;
   color: #fff;
   position: absolute;
-  top: 170px;
-  left: 75px;
-  width: 550px;
-  height: 180px;
+  top: 10.625rem;
+  left: 4.68rem;
+  width: 34.375rem;
+  height: 11.25rem;
   z-index: 51; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     .hero-banner__hero-copy {
-      font-size: 26px; } }
-  @media (max-width: 770px) {
+      font-size: 1.625rem; } }
+  @media (max-width: 48.125rem) {
     .hero-banner__hero-copy {
-      width: 216px;
-      height: 152px; } }
-  @media (max-width: 430px) {
+      width: 16.5rem;
+      height: 9.5rem; } }
+  @media (max-width: 26.875rem) {
     .hero-banner__hero-copy {
-      top: 218px;
-      left: 20px; } }
+      top: 13.625rem;
+      left: 1.25rem; } }
 
 /**********************
 Layout
@@ -688,7 +688,7 @@ full width content sections, sidebars, etc.
 ***********************/
 .container--full-width {
   width: 100%;
-  min-width: 280px;
+  min-width: 17.5rem;
   margin: 0 auto;
   padding: 0; }
 
@@ -699,7 +699,7 @@ full width content sections, sidebars, etc.
 
 .section__content {
   max-width: 100%;
-  width: 1300px;
+  width: 81.25rem;
   margin: 40px auto; }
 
 /**********************
@@ -768,7 +768,7 @@ full width content sections, sidebars, etc.
 ***********************/
 .container--full-width {
   width: 100%;
-  min-width: 280px;
+  min-width: 17.5rem;
   margin: 0 auto;
   padding: 0; }
 
@@ -779,7 +779,7 @@ full width content sections, sidebars, etc.
 
 .section__content {
   max-width: 100%;
-  width: 1300px;
+  width: 81.25rem;
   margin: 40px auto; }
 
 /**********************
@@ -827,13 +827,13 @@ This defines our grid layout and how items within the grid should responde to ch
 *************************************/
 h1 {
   font-family: "avenir next", sans-serif;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     h1 {
-      font-size: 26px; } }
+      font-size: 1.625rem; } }
 
 h4 {
   font-family: "roboto", sans-serif;
@@ -845,7 +845,7 @@ h4 {
 
 label, p {
   margin-top: 0;
-  margin-bottom: 8px; }
+  margin-bottom: 0.5rem; }
 
 .navigation-container {
   width: 100%;
@@ -858,7 +858,7 @@ label, p {
   color: inherit;
   text-decoration: none;
   width: 100%;
-  max-width: 1300px;
+  max-width: 81.25rem;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -869,23 +869,23 @@ label, p {
 
 .navigation-container > .navigation > .child > a {
   font-family: "avenir next", sans-serif;
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 600;
   line-height: 1.23;
   color: #1c2532;
   color: #fff;
   text-decoration: none;
   text-align: center;
-  font-size: 17px;
+  font-size: 1.0625rem;
   text-transform: uppercase;
-  width: 193px;
-  height: 80px;
-  padding: 32px 0;
+  width: 12.0625rem;
+  height: 5rem;
+  padding: 2rem 0;
   border: 1px solid #333b47;
   border-width: 0 1px 0 1px; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     .navigation-container > .navigation > .child > a {
-      font-size: 17px; } }
+      font-size: 1.0625rem; } }
 
 .navigation-container > .navigation > .child {
   display: flex;
@@ -907,10 +907,10 @@ label, p {
   .navigation .child > a {
     display: block;
     text-decoration: none;
-    height: 80px;
-    padding: 32px 25px;
+    height: 5rem;
+    padding: 2rem 1.5625rem;
     font-family: "avenir next", sans-serif;
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 500;
     line-height: 1.23;
     color: #1c2532;
@@ -918,14 +918,14 @@ label, p {
     text-decoration: none;
     font-size: 16px;
     transition: color ease-in-out 300ms; }
-    @media (max-width: 770px) {
+    @media (max-width: 48.125rem) {
       .navigation .child > a {
-        font-size: 17px; } }
+        font-size: 1.0625rem; } }
     .navigation .child > a:hover {
       color: #fff; }
 
 .navigation .child.selected {
-  border-bottom: 5px solid #60a7e5; }
+  border-bottom: 0.3125rem solid #60a7e5; }
 
 /****************************************************************
 
@@ -946,12 +946,12 @@ label, p {
 
 *****************************************************************/
 input[type="email"] {
-  padding: 13px 20px;
-  border-radius: 20px;
+  padding: 0.8125rem 1.25rem;
+  border-radius: 1.25rem;
   border: 1px solid #60a7e5;
   background: transparent;
   color: #a4a7ad;
-  margin-right: 20px;
+  margin-right: 1.25rem;
   max-width: 100%; }
   input[type="email"]:focus {
     outline: none; }
@@ -1004,7 +1004,7 @@ full width content sections, sidebars, etc.
 ***********************/
 .container--full-width {
   width: 100%;
-  min-width: 280px;
+  min-width: 17.5rem;
   margin: 0 auto;
   padding: 0; }
 
@@ -1015,7 +1015,7 @@ full width content sections, sidebars, etc.
 
 .section__content {
   max-width: 100%;
-  width: 1300px;
+  width: 81.25rem;
   margin: 40px auto; }
 
 /**********************
@@ -1063,13 +1063,13 @@ This defines our grid layout and how items within the grid should responde to ch
 *************************************/
 h1 {
   font-family: "avenir next", sans-serif;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     h1 {
-      font-size: 26px; } }
+      font-size: 1.625rem; } }
 
 h4 {
   font-family: "roboto", sans-serif;
@@ -1081,7 +1081,7 @@ h4 {
 
 label, p {
   margin-top: 0;
-  margin-bottom: 8px; }
+  margin-bottom: 0.5rem; }
 
 /**********************
 Layout
@@ -1092,7 +1092,7 @@ full width content sections, sidebars, etc.
 ***********************/
 .container--full-width {
   width: 100%;
-  min-width: 280px;
+  min-width: 17.5rem;
   margin: 0 auto;
   padding: 0; }
 
@@ -1103,7 +1103,7 @@ full width content sections, sidebars, etc.
 
 .section__content {
   max-width: 100%;
-  width: 1300px;
+  width: 81.25rem;
   margin: 40px auto; }
 
 /**********************
@@ -1127,13 +1127,13 @@ This defines our grid layout and how items within the grid should responde to ch
 .newsletter-box__container {
   width: 100%;
   background-color: #1c2532;
-  padding: 43px 20px;
+  padding: 2.69rem 1.25rem;
   border-bottom: 1px solid #a4a7ad; }
 
 .newsletter-box {
   max-width: 100%;
-  width: 1300px;
-  min-width: 280px;
+  width: 81.25rem;
+  min-width: 17.5rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -1144,16 +1144,16 @@ This defines our grid layout and how items within the grid should responde to ch
 
 .newsletter-box__call-to-action {
   font-family: "avenir next", sans-serif;
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 500;
   line-height: 1.23;
   color: #1c2532;
   color: #fff;
   margin-bottom: 1.2rem;
   padding: 0.3rem 0; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     .newsletter-box__call-to-action {
-      font-size: 17px; } }
+      font-size: 1.0625rem; } }
 
 .newsletter-box__content {
   display: flex;
@@ -1161,16 +1161,30 @@ This defines our grid layout and how items within the grid should responde to ch
   flex-flow: row nowrap; }
 
 .newsletter-box__input {
-  width: 345px;
-  max-width: 420px;
+  width: 21.5636rem;
+  max-width: 26.25rem;
   margin-bottom: 1rem; }
 
 .newsletter-box__submit {
-  padding: 13px 20px;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.01875rem;
+  line-height: 1.25;
+  text-align: center;
+  padding: 0.812rem 1.25rem;
   background-color: #60a7e5;
   color: #fff;
-  border-radius: 40px;
-  border: none; }
+  border-radius: 2.5rem;
+  border: none;
+  cursor: pointer;
+  outline: none; }
+  .newsletter-box__submit:hover {
+    background-color: #5392ca;
+    outline: none; }
+  .newsletter-box__submit:active {
+    background-color: #90c2ed;
+    outline: none; }
 
 /****************************************************************
 
@@ -1230,7 +1244,7 @@ full width content sections, sidebars, etc.
 ***********************/
 .container--full-width {
   width: 100%;
-  min-width: 280px;
+  min-width: 17.5rem;
   margin: 0 auto;
   padding: 0; }
 
@@ -1241,7 +1255,7 @@ full width content sections, sidebars, etc.
 
 .section__content {
   max-width: 100%;
-  width: 1300px;
+  width: 81.25rem;
   margin: 40px auto; }
 
 /**********************
@@ -1289,13 +1303,13 @@ This defines our grid layout and how items within the grid should responde to ch
 *************************************/
 h1 {
   font-family: "avenir next", sans-serif;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400; }
-  @media (max-width: 770px) {
+  @media (max-width: 48.125rem) {
     h1 {
-      font-size: 26px; } }
+      font-size: 1.625rem; } }
 
 h4 {
   font-family: "roboto", sans-serif;
@@ -1307,5 +1321,5 @@ h4 {
 
 label, p {
   margin-top: 0;
-  margin-bottom: 8px; }
+  margin-bottom: 0.5rem; }
 

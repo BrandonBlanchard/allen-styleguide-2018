@@ -6,7 +6,7 @@
 .newsletter-box__container {
     width: 100%;
     background-color: $colorNavyMedium;
-    padding: 43px 20px;
+    padding: 2.69rem 1.25rem;
 
     border-bottom: 1px solid $colorTextLight;
 }
@@ -41,11 +41,11 @@
 }
 
 .newsletter-box__input {
-    width: 345px;
-    max-width: 420px;
+    width: 21.5636rem;
+    max-width: 26.25rem;
     margin-bottom: 1rem;
 }
 
 .newsletter-box__submit {
-    @include ButtonPrimary(); 
+    @include buttonPrimary(); 
 }
