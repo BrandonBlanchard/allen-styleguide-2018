@@ -4,8 +4,11 @@
 .color-swatch {
     font-family: $fontPrimary;
     font-weight: $fontPrimaryRegular;
-    width: 240px;
+    
     margin-right: 20px;
+    width: 240px;
+
+    flex-basis: 1;
 }
 
 .color-swatch__swatch {

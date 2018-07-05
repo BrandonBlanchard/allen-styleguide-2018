@@ -94,3 +94,8 @@ $colorLight: #fff;
 // Widths / Sizes
 $siteMaxWidth: 1300px;
 $siteMinWidth: 280px;
+
+// Breakpoint widths
+// These should progress downward i.e. desktop first
+$sizeTablet: 770px;
+$sizeMobile: 430px;

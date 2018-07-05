@@ -1,8 +1,12 @@
-
+@import 'layout';
 
 .flex-container {
+    @extend .grid;
+
     width: 100%;
+    
     overflow-x: hidden;
+    
     display: flex;
     flex-flow: row wrap;
 }

@@ -1,0 +1,51 @@
+@import 'forms';
+@import 'variables';
+@import 'typography';
+@import 'layout';
+
+.newsletter-box__container {
+    width: 100%;
+    background-color: $colorNavyMedium;
+    padding: 43px 20px;
+
+    border-bottom: 1px solid $colorTextLight;
+}
+
+.newsletter-box {
+    max-width: 100%;
+    width: $siteMaxWidth;
+    min-width: $siteMinWidth;
+    
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.newsletter-box__form {
+    max-width: 100%;
+}
+
+.newsletter-box__call-to-action {
+    @include TitleMedium();
+    color: $colorLight;
+    margin-bottom: 1.2rem;
+    padding: 0.3rem 0;
+}
+
+.newsletter-box__content {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+}
+
+.newsletter-box__input {
+    width: 345px;
+    max-width: 420px;
+    margin-bottom: 1rem;
+}
+
+.newsletter-box__submit {
+    @include ButtonPrimary(); 
+}

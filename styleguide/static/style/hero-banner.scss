@@ -11,8 +11,11 @@
     perspective: 1px;
     overflow: hidden;
 
-    //background-image: url('/static/img/portal-header.png');
     z-index: 1;
+
+    @include Tablet {
+        height: 430px;
+    }
 }
 
 .hero-banner__content {
@@ -37,6 +40,11 @@
     height: 167px;
     border-radius: 50%;
     border: 1px solid $colorLightBlue;
+
+    @include Mobile {
+        display: none;
+    }
+    
 }
 
 .circle-outline--1 {
@@ -51,6 +59,10 @@
 
     top: 160px;
     left: 648px;
+
+    @include Tablet {
+        display: none;
+    }
 }
 
 .hero-banner__thick-line--top-left {
@@ -65,6 +77,10 @@
     background-color: $colorBrandLight;
 
     z-index: 25;
+
+    @include Tablet {
+        display: none;
+    }
 }
 
 .hero-banner__thick-line--bottom-right {
@@ -79,6 +95,10 @@
     background-color: $colorBrandLight;
 
     z-index: 25;
+
+    @include Tablet {
+        display: none;
+    }
 }
 
 .hero-banner__thin-line--bottom-left {
@@ -94,6 +114,9 @@
 
     z-index: 25;
     
+    @include Tablet {
+        display: none;
+    }
 }
 
 .hero-banner__thin-line--bottom-right {
@@ -108,6 +131,10 @@
     background-color: $colorLightBlue;
 
     z-index: 25;
+
+    @include Tablet {
+        display: none;
+    }
 }
 
 .hero-banner__collage-circle {
@@ -120,11 +147,18 @@
     border-radius: 50%;
     overflow: hidden;
 
+    opacity: 0.75;
+
     z-index: 25;
 
     > img {
         width: 100%;
         height: 100%;
+    }
+
+    @include Tablet {
+        height: 210px;
+        width: 210px;
     }
 }
 
@@ -134,6 +168,14 @@
     
     top: 40px;
     left: 864px;
+
+    @include Tablet {
+        left: 360px;
+    }
+
+    @include Mobile {
+        left: 40px;
+    }
 }
 
 .hero-banner__collage-circle--top-right {
@@ -141,6 +183,14 @@
 
     top: 40px;
     left: 1198px;
+
+    @include Tablet {
+        left: 620px;
+    }
+
+    @include Mobile {
+        left: 280px;
+    }
 }
 
 .hero-banner__collage-circle--bottom-left {
@@ -151,6 +201,21 @@
 
     top: 338px;
     left: 754px;
+
+    @include  Tablet {
+        width: 210px;
+        height: 210px;
+        
+        top: 280px;
+        left: 220px;
+    }
+
+    @include Mobile {
+        width: 180px;
+        height: 180px;
+
+        left: -60px;
+    }
 }
 
 .hero-banner__collage-circle--bottom-right {
@@ -161,20 +226,46 @@
 
     top: 314px;
     left: 1046px;
+
+    @include Tablet {
+        width: 210px;
+        height: 210px;
+        
+        left: 500px;
+        top: 280px;
+    }
+
+    @include Mobile {
+        width: 200px;
+        height: 200px;
+
+        top: 255px;
+        left: 170px;
+    }
 }
 
 .hero-banner__hero-copy {
+    @include displayHeaderLarge() {
+        color: $colorLight;
+    };
+    
     position: absolute;
-
+    
     top: 170px;
     left: 75px;
-
+    
     width: 550px;
     height: 180px;
-
-    @include DisplayHeaderLarge();
-
-    color: $colorLight;
-
+    
     z-index: 51;
+
+    @include Tablet {
+        width: 216px;
+        height: 152px;
+    }
+
+    @include Mobile {
+        top: 218px;
+        left: 20px;
+    }
 }

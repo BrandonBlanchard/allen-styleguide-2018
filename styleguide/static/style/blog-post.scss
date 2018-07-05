@@ -22,7 +22,8 @@
 }
 
 .blog-post__title {
-    @include DisplayHeaderLarge;
+    @include displayHeaderLarge();
+    
     color: $colorLight;
     margin: 0;
 }

@@ -24,9 +24,58 @@ full width content sections, sidebars, etc.
 .section__content {
     max-width: 100%;
     width: $siteMaxWidth;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
-.section--constrained {
+/**********************
+Flexible Grid
 
+This defines our grid layout and how items within the grid should responde to changes in size.
+***********************/
+
+.grid {
+    display: flex;
+}
+
+.grid > {
+    flex: 1;
+}
+
+
+/********************
+    Media query mixins
+
+    usage: @include Tablet { .mystyles { display: whatever; } }
+           @include Mobile { .someStyle { whatever: whatever; } }
+
+********************/
+
+@mixin Tablet {
+    @media (max-width: #{$sizeTablet}) {
+        @content;
+    }
+}
+
+@mixin Mobile {
+    @media (max-width: #{$sizeMobile}){
+        @content;
+    }
+}
+
+@mixin Retina {
+    @media 
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+        @content;
+    }
+}
+
+@mixin Print {
+    @media print {
+        @content;
+    }
 }

@@ -4,7 +4,8 @@
   "description": "Allen Institute styleguide 2018",
   "main": "none",
   "scripts": {
-    "start": "python manage.py runserver & webpack",
+    "start": "python manage.py runserver & webpack &",
+    "stop": "pkill python || pkill node",
     "flush": "python manage.py flush",
     "django-help": "python manage.py help",
     "new-user": "python manage.py createsuperuser",

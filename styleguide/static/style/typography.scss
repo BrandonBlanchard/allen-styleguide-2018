@@ -2,6 +2,7 @@
 Typography
 *****************/
 @import 'variables';
+@import 'layout';
 
 @font-face {
     font-family: 'roboto';
@@ -21,15 +22,32 @@ Typography
     font-weight: 700;
 }
 
+/*************************************
+    Font Style mixins
+
+    usage: 
+        @include displayHeaderLarge();
+
+    override a rule in mixin:
+        @include displayHeaderLarge { font-size $fontSizeXS; }
+
+*************************************/
 // These names match the ones found in the blink ux doc "Typography 2"
 
-@mixin DisplayHeaderLarge {
+@mixin displayHeaderLarge (){
     font-family: $fontPrimary;
     font-size: $fontSizeXXXL;
     line-height: 1.2;
     color: $colorNavyMedium;
     font-weight: 400;
+    
+    @include Tablet {
+        font-size: $fontSizeXL;
+    }
+
+    @content;
 }
+
 
 @mixin TitleMediumBold {
     // AvenirNext-Demibold / 26px
@@ -38,6 +56,12 @@ Typography
     font-weight: $fontPrimaryBold;
     line-height: 1.23;
     color: $colorNavyMedium;
+
+    @include Tablet {
+        font-size: $fontSizeL;
+    }
+
+    @content;
 }
 
 @mixin TitleMedium {
@@ -47,6 +71,12 @@ Typography
     font-weight: $fontPrimaryMedium;
     line-height: 1.23;
     color: $colorNavyMedium;
+
+    @include Tablet {
+        font-size: $fontSizeL;
+    }
+
+    @content;
 }
 
 @mixin TitleSmallUppercase {
@@ -58,6 +88,8 @@ Typography
     color: $colorNavyMedium;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+
+    
 }
 
 @mixin TitleSmall {
@@ -111,7 +143,7 @@ Typography
 }
 
 h1 {
-    @include DisplayHeaderLarge();
+    @include displayHeaderLarge();
 }
 
 h2 {

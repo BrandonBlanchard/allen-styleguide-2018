@@ -20,7 +20,6 @@ class FlexContainer(CMSPlugin):
     
     spacing = models.CharField(choices = CONTAINER_SPACING_TYPES, default = 'flex-start', max_length = 13)
 
-
 class ContentSection(CMSPlugin):
     CONTAINER_BACKGROUNDS = (
         ('#1c2532','navy'),
@@ -37,3 +36,6 @@ class HeroBanner(CMSPlugin):
     BottomLeftImageCircle = FilerImageField(null=True, blank=True, related_name="bottom_right_image", on_delete=models.SET_NULL)
 
     HeroText = models.CharField(max_length=140, default="Accelerating progress toward understanding the brain.")
+
+class NewsletterBox(CMSPlugin):
+    call_to_action = models.CharField(default = "", max_length = 140)

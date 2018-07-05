@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 {% load cms_tags %}
 
-{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+{% block title %}
+	{% page_attribute "page_title" %}
+{% endblock title %}
+
+{% placeholder "hero" %}
 
 {% block content %}
 	{% placeholder "content" %}

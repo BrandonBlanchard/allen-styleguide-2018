@@ -1,0 +1,29 @@
+@import 'variables';
+
+
+
+
+@mixin ButtonPrimary {
+    padding: 13px 20px;
+    background-color: $colorBrandLight;
+    color: $colorLight;
+
+    border-radius: 40px;
+    border: none;
+}
+
+input[type="email"] {
+    padding: 13px 20px;
+    border-radius: 20px;
+
+    border: 1px solid $colorBrandLight;
+    background: transparent;
+    color: $colorTextLight;
+
+    margin-right: 20px;
+    max-width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}

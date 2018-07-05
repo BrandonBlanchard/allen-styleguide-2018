@@ -47,6 +47,47 @@ Typography
     Thanks!
 
 *****************************************************************/
+/**********************
+Layout
+
+This file contains various layout options. Things like full width page containers that shrink to a minimum size,
+full width content sections, sidebars, etc. 
+
+***********************/
+.container--full-width {
+  width: 100%;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0; }
+
+.section--full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0 20px; }
+
+.section__content {
+  max-width: 100%;
+  width: 1300px;
+  margin: 40px auto; }
+
+/**********************
+Flexible Grid
+
+This defines our grid layout and how items within the grid should responde to changes in size.
+***********************/
+.grid, .flex-container {
+  display: flex; }
+
+.grid >, .flex-container > {
+  flex: 1; }
+
+/********************
+    Media query mixins
+
+    usage: @include Tablet { .mystyles { display: whatever; } }
+           @include Mobile { .someStyle { whatever: whatever; } }
+
+********************/
 @font-face {
   font-family: 'roboto';
   src: url("/static/font/Roboto-Regular.ttf");
@@ -62,12 +103,25 @@ Typography
   src: url("/static/font/Roboto-Bold.ttf");
   font-weight: 700; }
 
+/*************************************
+    Font Style mixins
+
+    usage: 
+        @include displayHeaderLarge();
+
+    override a rule in mixin:
+        @include displayHeaderLarge { font-size $fontSizeXS; }
+
+*************************************/
 h1 {
   font-family: "avenir next", sans-serif;
   font-size: 50px;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400; }
+  @media (max-width: 770px) {
+    h1 {
+      font-size: 26px; } }
 
 h4 {
   font-family: "roboto", sans-serif;
@@ -102,6 +156,9 @@ label, p {
   font-weight: 400;
   color: #fff;
   margin: 0; }
+  @media (max-width: 770px) {
+    .blog-post__title {
+      font-size: 26px; } }
 
 .blog-post__author {
   color: #a4a7ad; }
@@ -145,6 +202,47 @@ Typography
     Thanks!
 
 *****************************************************************/
+/**********************
+Layout
+
+This file contains various layout options. Things like full width page containers that shrink to a minimum size,
+full width content sections, sidebars, etc. 
+
+***********************/
+.container--full-width {
+  width: 100%;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0; }
+
+.section--full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0 20px; }
+
+.section__content {
+  max-width: 100%;
+  width: 1300px;
+  margin: 40px auto; }
+
+/**********************
+Flexible Grid
+
+This defines our grid layout and how items within the grid should responde to changes in size.
+***********************/
+.grid, .flex-container {
+  display: flex; }
+
+.grid >, .flex-container > {
+  flex: 1; }
+
+/********************
+    Media query mixins
+
+    usage: @include Tablet { .mystyles { display: whatever; } }
+           @include Mobile { .someStyle { whatever: whatever; } }
+
+********************/
 @font-face {
   font-family: 'roboto';
   src: url("/static/font/Roboto-Regular.ttf");
@@ -160,12 +258,25 @@ Typography
   src: url("/static/font/Roboto-Bold.ttf");
   font-weight: 700; }
 
+/*************************************
+    Font Style mixins
+
+    usage: 
+        @include displayHeaderLarge();
+
+    override a rule in mixin:
+        @include displayHeaderLarge { font-size $fontSizeXS; }
+
+*************************************/
 h1 {
   font-family: "avenir next", sans-serif;
   font-size: 50px;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400; }
+  @media (max-width: 770px) {
+    h1 {
+      font-size: 26px; } }
 
 h4 {
   font-family: "roboto", sans-serif;
@@ -182,8 +293,9 @@ label, p {
 .color-swatch {
   font-family: "avenir next", sans-serif;
   font-weight: 400;
+  margin-right: 20px;
   width: 240px;
-  margin-right: 20px; }
+  flex-basis: 1; }
 
 .color-swatch__swatch {
   width: 100%;
@@ -201,6 +313,47 @@ label, p {
   display: inline-block;
   margin-right: 10px; }
 
+/**********************
+Layout
+
+This file contains various layout options. Things like full width page containers that shrink to a minimum size,
+full width content sections, sidebars, etc. 
+
+***********************/
+.container--full-width {
+  width: 100%;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0; }
+
+.section--full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0 20px; }
+
+.section__content {
+  max-width: 100%;
+  width: 1300px;
+  margin: 40px auto; }
+
+/**********************
+Flexible Grid
+
+This defines our grid layout and how items within the grid should responde to changes in size.
+***********************/
+.grid, .flex-container {
+  display: flex; }
+
+.grid >, .flex-container > {
+  flex: 1; }
+
+/********************
+    Media query mixins
+
+    usage: @include Tablet { .mystyles { display: whatever; } }
+           @include Mobile { .someStyle { whatever: whatever; } }
+
+********************/
 .flex-container {
   width: 100%;
   overflow-x: hidden;
@@ -246,6 +399,47 @@ Typography
     Thanks!
 
 *****************************************************************/
+/**********************
+Layout
+
+This file contains various layout options. Things like full width page containers that shrink to a minimum size,
+full width content sections, sidebars, etc. 
+
+***********************/
+.container--full-width {
+  width: 100%;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0; }
+
+.section--full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0 20px; }
+
+.section__content {
+  max-width: 100%;
+  width: 1300px;
+  margin: 40px auto; }
+
+/**********************
+Flexible Grid
+
+This defines our grid layout and how items within the grid should responde to changes in size.
+***********************/
+.grid, .flex-container {
+  display: flex; }
+
+.grid >, .flex-container > {
+  flex: 1; }
+
+/********************
+    Media query mixins
+
+    usage: @include Tablet { .mystyles { display: whatever; } }
+           @include Mobile { .someStyle { whatever: whatever; } }
+
+********************/
 @font-face {
   font-family: 'roboto';
   src: url("/static/font/Roboto-Regular.ttf");
@@ -261,12 +455,25 @@ Typography
   src: url("/static/font/Roboto-Bold.ttf");
   font-weight: 700; }
 
+/*************************************
+    Font Style mixins
+
+    usage: 
+        @include displayHeaderLarge();
+
+    override a rule in mixin:
+        @include displayHeaderLarge { font-size $fontSizeXS; }
+
+*************************************/
 h1 {
   font-family: "avenir next", sans-serif;
   font-size: 50px;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400; }
+  @media (max-width: 770px) {
+    h1 {
+      font-size: 26px; } }
 
 h4 {
   font-family: "roboto", sans-serif;
@@ -288,6 +495,9 @@ label, p {
   perspective: 1px;
   overflow: hidden;
   z-index: 1; }
+  @media (max-width: 770px) {
+    .hero-banner {
+      height: 430px; } }
 
 .hero-banner__content {
   max-width: 100%;
@@ -306,6 +516,9 @@ label, p {
   height: 167px;
   border-radius: 50%;
   border: 1px solid #30445B; }
+  @media (max-width: 430px) {
+    .circle-outline, .circle-outline--1, .circle-outline--2 {
+      display: none; } }
 
 .circle-outline--1 {
   top: 82px;
@@ -314,6 +527,9 @@ label, p {
 .circle-outline--2 {
   top: 160px;
   left: 648px; }
+  @media (max-width: 770px) {
+    .circle-outline--2 {
+      display: none; } }
 
 .hero-banner__thick-line--top-left {
   position: absolute;
@@ -324,6 +540,9 @@ label, p {
   transform: rotate(29deg);
   background-color: #60a7e5;
   z-index: 25; }
+  @media (max-width: 770px) {
+    .hero-banner__thick-line--top-left {
+      display: none; } }
 
 .hero-banner__thick-line--bottom-right {
   position: absolute;
@@ -334,6 +553,9 @@ label, p {
   transform: rotate(29deg);
   background-color: #60a7e5;
   z-index: 25; }
+  @media (max-width: 770px) {
+    .hero-banner__thick-line--bottom-right {
+      display: none; } }
 
 .hero-banner__thin-line--bottom-left {
   position: absolute;
@@ -344,6 +566,9 @@ label, p {
   transform: rotate(22deg);
   background-color: #30445B;
   z-index: 25; }
+  @media (max-width: 770px) {
+    .hero-banner__thin-line--bottom-left {
+      display: none; } }
 
 .hero-banner__thin-line--bottom-right {
   position: absolute;
@@ -354,6 +579,9 @@ label, p {
   transform: rotate(22deg);
   background-color: #30445B;
   z-index: 25; }
+  @media (max-width: 770px) {
+    .hero-banner__thin-line--bottom-right {
+      display: none; } }
 
 .hero-banner__collage-circle, .hero-banner__collage-circle--top-left, .hero-banner__collage-circle--top-right, .hero-banner__collage-circle--bottom-left, .hero-banner__collage-circle--bottom-right {
   position: absolute;
@@ -361,44 +589,95 @@ label, p {
   height: 290px;
   border-radius: 50%;
   overflow: hidden;
+  opacity: 0.75;
   z-index: 25; }
   .hero-banner__collage-circle > img, .hero-banner__collage-circle--top-left > img, .hero-banner__collage-circle--top-right > img, .hero-banner__collage-circle--bottom-left > img, .hero-banner__collage-circle--bottom-right > img {
     width: 100%;
     height: 100%; }
+  @media (max-width: 770px) {
+    .hero-banner__collage-circle, .hero-banner__collage-circle--top-left, .hero-banner__collage-circle--top-right, .hero-banner__collage-circle--bottom-left, .hero-banner__collage-circle--bottom-right {
+      height: 210px;
+      width: 210px; } }
 
 .hero-banner__collage-circle--top-left {
   top: 40px;
   left: 864px; }
+  @media (max-width: 770px) {
+    .hero-banner__collage-circle--top-left {
+      left: 360px; } }
+  @media (max-width: 430px) {
+    .hero-banner__collage-circle--top-left {
+      left: 40px; } }
 
 .hero-banner__collage-circle--top-right {
   top: 40px;
   left: 1198px; }
+  @media (max-width: 770px) {
+    .hero-banner__collage-circle--top-right {
+      left: 620px; } }
+  @media (max-width: 430px) {
+    .hero-banner__collage-circle--top-right {
+      left: 280px; } }
 
 .hero-banner__collage-circle--bottom-left {
   width: 240px;
   height: 240px;
   top: 338px;
   left: 754px; }
+  @media (max-width: 770px) {
+    .hero-banner__collage-circle--bottom-left {
+      width: 210px;
+      height: 210px;
+      top: 280px;
+      left: 220px; } }
+  @media (max-width: 430px) {
+    .hero-banner__collage-circle--bottom-left {
+      width: 180px;
+      height: 180px;
+      left: -60px; } }
 
 .hero-banner__collage-circle--bottom-right {
   width: 276px;
   height: 276px;
   top: 314px;
   left: 1046px; }
+  @media (max-width: 770px) {
+    .hero-banner__collage-circle--bottom-right {
+      width: 210px;
+      height: 210px;
+      left: 500px;
+      top: 280px; } }
+  @media (max-width: 430px) {
+    .hero-banner__collage-circle--bottom-right {
+      width: 200px;
+      height: 200px;
+      top: 255px;
+      left: 170px; } }
 
 .hero-banner__hero-copy {
-  position: absolute;
-  top: 170px;
-  left: 75px;
-  width: 550px;
-  height: 180px;
   font-family: "avenir next", sans-serif;
   font-size: 50px;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400;
   color: #fff;
+  position: absolute;
+  top: 170px;
+  left: 75px;
+  width: 550px;
+  height: 180px;
   z-index: 51; }
+  @media (max-width: 770px) {
+    .hero-banner__hero-copy {
+      font-size: 26px; } }
+  @media (max-width: 770px) {
+    .hero-banner__hero-copy {
+      width: 216px;
+      height: 152px; } }
+  @media (max-width: 430px) {
+    .hero-banner__hero-copy {
+      top: 218px;
+      left: 20px; } }
 
 /**********************
 Layout
@@ -421,8 +700,26 @@ full width content sections, sidebars, etc.
 .section__content {
   max-width: 100%;
   width: 1300px;
-  margin: 0 auto; }
+  margin: 40px auto; }
 
+/**********************
+Flexible Grid
+
+This defines our grid layout and how items within the grid should responde to changes in size.
+***********************/
+.grid, .flex-container {
+  display: flex; }
+
+.grid >, .flex-container > {
+  flex: 1; }
+
+/********************
+    Media query mixins
+
+    usage: @include Tablet { .mystyles { display: whatever; } }
+           @include Mobile { .someStyle { whatever: whatever; } }
+
+********************/
 /****************************************************************
 
     Naming conventions!
@@ -462,6 +759,47 @@ Typography
     Thanks!
 
 *****************************************************************/
+/**********************
+Layout
+
+This file contains various layout options. Things like full width page containers that shrink to a minimum size,
+full width content sections, sidebars, etc. 
+
+***********************/
+.container--full-width {
+  width: 100%;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0; }
+
+.section--full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0 20px; }
+
+.section__content {
+  max-width: 100%;
+  width: 1300px;
+  margin: 40px auto; }
+
+/**********************
+Flexible Grid
+
+This defines our grid layout and how items within the grid should responde to changes in size.
+***********************/
+.grid, .flex-container {
+  display: flex; }
+
+.grid >, .flex-container > {
+  flex: 1; }
+
+/********************
+    Media query mixins
+
+    usage: @include Tablet { .mystyles { display: whatever; } }
+           @include Mobile { .someStyle { whatever: whatever; } }
+
+********************/
 @font-face {
   font-family: 'roboto';
   src: url("/static/font/Roboto-Regular.ttf");
@@ -477,12 +815,25 @@ Typography
   src: url("/static/font/Roboto-Bold.ttf");
   font-weight: 700; }
 
+/*************************************
+    Font Style mixins
+
+    usage: 
+        @include displayHeaderLarge();
+
+    override a rule in mixin:
+        @include displayHeaderLarge { font-size $fontSizeXS; }
+
+*************************************/
 h1 {
   font-family: "avenir next", sans-serif;
   font-size: 50px;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400; }
+  @media (max-width: 770px) {
+    h1 {
+      font-size: 26px; } }
 
 h4 {
   font-family: "roboto", sans-serif;
@@ -532,6 +883,9 @@ label, p {
   padding: 32px 0;
   border: 1px solid #333b47;
   border-width: 0 1px 0 1px; }
+  @media (max-width: 770px) {
+    .navigation-container > .navigation > .child > a {
+      font-size: 17px; } }
 
 .navigation-container > .navigation > .child {
   display: flex;
@@ -564,18 +918,287 @@ label, p {
     text-decoration: none;
     font-size: 16px;
     transition: color ease-in-out 300ms; }
+    @media (max-width: 770px) {
+      .navigation .child > a {
+        font-size: 17px; } }
     .navigation .child > a:hover {
       color: #fff; }
 
 .navigation .child.selected {
   border-bottom: 5px solid #60a7e5; }
 
+/****************************************************************
+
+    Naming conventions!
+
+    camelCase
+
+    prefix everything with its type, ie:
+
+    $colorBrand: #003056;
+    $fontPrimary: avenir;
+    $fontSizeM: 12px;
+    
+    Nothing in here should be component specific. Don't add things like $panelBGDark, instead
+    use one of the predefined colors like $colorNavyBlue or something.
+
+    Thanks!
+
+*****************************************************************/
+input[type="email"] {
+  padding: 13px 20px;
+  border-radius: 20px;
+  border: 1px solid #60a7e5;
+  background: transparent;
+  color: #a4a7ad;
+  margin-right: 20px;
+  max-width: 100%; }
+  input[type="email"]:focus {
+    outline: none; }
+
+/****************************************************************
+
+    Naming conventions!
+
+    camelCase
+
+    prefix everything with its type, ie:
+
+    $colorBrand: #003056;
+    $fontPrimary: avenir;
+    $fontSizeM: 12px;
+    
+    Nothing in here should be component specific. Don't add things like $panelBGDark, instead
+    use one of the predefined colors like $colorNavyBlue or something.
+
+    Thanks!
+
+*****************************************************************/
+/*****************
+Typography
+*****************/
+/****************************************************************
+
+    Naming conventions!
+
+    camelCase
+
+    prefix everything with its type, ie:
+
+    $colorBrand: #003056;
+    $fontPrimary: avenir;
+    $fontSizeM: 12px;
+    
+    Nothing in here should be component specific. Don't add things like $panelBGDark, instead
+    use one of the predefined colors like $colorNavyBlue or something.
+
+    Thanks!
+
+*****************************************************************/
+/**********************
+Layout
+
+This file contains various layout options. Things like full width page containers that shrink to a minimum size,
+full width content sections, sidebars, etc. 
+
+***********************/
+.container--full-width {
+  width: 100%;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0; }
+
+.section--full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0 20px; }
+
+.section__content {
+  max-width: 100%;
+  width: 1300px;
+  margin: 40px auto; }
+
+/**********************
+Flexible Grid
+
+This defines our grid layout and how items within the grid should responde to changes in size.
+***********************/
+.grid, .flex-container {
+  display: flex; }
+
+.grid >, .flex-container > {
+  flex: 1; }
+
+/********************
+    Media query mixins
+
+    usage: @include Tablet { .mystyles { display: whatever; } }
+           @include Mobile { .someStyle { whatever: whatever; } }
+
+********************/
+@font-face {
+  font-family: 'roboto';
+  src: url("/static/font/Roboto-Regular.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("/static/font/Roboto-Medium.ttf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("/static/font/Roboto-Bold.ttf");
+  font-weight: 700; }
+
+/*************************************
+    Font Style mixins
+
+    usage: 
+        @include displayHeaderLarge();
+
+    override a rule in mixin:
+        @include displayHeaderLarge { font-size $fontSizeXS; }
+
+*************************************/
+h1 {
+  font-family: "avenir next", sans-serif;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #1c2532;
+  font-weight: 400; }
+  @media (max-width: 770px) {
+    h1 {
+      font-size: 26px; } }
+
+h4 {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  color: #1c2532; }
+
+label, p {
+  margin-top: 0;
+  margin-bottom: 8px; }
+
+/**********************
+Layout
+
+This file contains various layout options. Things like full width page containers that shrink to a minimum size,
+full width content sections, sidebars, etc. 
+
+***********************/
+.container--full-width {
+  width: 100%;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0; }
+
+.section--full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0 20px; }
+
+.section__content {
+  max-width: 100%;
+  width: 1300px;
+  margin: 40px auto; }
+
+/**********************
+Flexible Grid
+
+This defines our grid layout and how items within the grid should responde to changes in size.
+***********************/
+.grid, .flex-container {
+  display: flex; }
+
+.grid >, .flex-container > {
+  flex: 1; }
+
+/********************
+    Media query mixins
+
+    usage: @include Tablet { .mystyles { display: whatever; } }
+           @include Mobile { .someStyle { whatever: whatever; } }
+
+********************/
+.newsletter-box__container {
+  width: 100%;
+  background-color: #1c2532;
+  padding: 43px 20px;
+  border-bottom: 1px solid #a4a7ad; }
+
+.newsletter-box {
+  max-width: 100%;
+  width: 1300px;
+  min-width: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap; }
+
+.newsletter-box__form {
+  max-width: 100%; }
+
+.newsletter-box__call-to-action {
+  font-family: "avenir next", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.23;
+  color: #1c2532;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  padding: 0.3rem 0; }
+  @media (max-width: 770px) {
+    .newsletter-box__call-to-action {
+      font-size: 17px; } }
+
+.newsletter-box__content {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap; }
+
+.newsletter-box__input {
+  width: 345px;
+  max-width: 420px;
+  margin-bottom: 1rem; }
+
+.newsletter-box__submit {
+  padding: 13px 20px;
+  background-color: #60a7e5;
+  color: #fff;
+  border-radius: 40px;
+  border: none; }
+
+/****************************************************************
+
+    Naming conventions!
+
+    camelCase
+
+    prefix everything with its type, ie:
+
+    $colorBrand: #003056;
+    $fontPrimary: avenir;
+    $fontSizeM: 12px;
+    
+    Nothing in here should be component specific. Don't add things like $panelBGDark, instead
+    use one of the predefined colors like $colorNavyBlue or something.
+
+    Thanks!
+
+*****************************************************************/
 * {
   box-sizing: border-box; }
 
 body, html {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  font-size: 16px; }
 
 /*****************
 Typography
@@ -598,6 +1221,47 @@ Typography
     Thanks!
 
 *****************************************************************/
+/**********************
+Layout
+
+This file contains various layout options. Things like full width page containers that shrink to a minimum size,
+full width content sections, sidebars, etc. 
+
+***********************/
+.container--full-width {
+  width: 100%;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0; }
+
+.section--full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0 20px; }
+
+.section__content {
+  max-width: 100%;
+  width: 1300px;
+  margin: 40px auto; }
+
+/**********************
+Flexible Grid
+
+This defines our grid layout and how items within the grid should responde to changes in size.
+***********************/
+.grid, .flex-container {
+  display: flex; }
+
+.grid >, .flex-container > {
+  flex: 1; }
+
+/********************
+    Media query mixins
+
+    usage: @include Tablet { .mystyles { display: whatever; } }
+           @include Mobile { .someStyle { whatever: whatever; } }
+
+********************/
 @font-face {
   font-family: 'roboto';
   src: url("/static/font/Roboto-Regular.ttf");
@@ -613,12 +1277,25 @@ Typography
   src: url("/static/font/Roboto-Bold.ttf");
   font-weight: 700; }
 
+/*************************************
+    Font Style mixins
+
+    usage: 
+        @include displayHeaderLarge();
+
+    override a rule in mixin:
+        @include displayHeaderLarge { font-size $fontSizeXS; }
+
+*************************************/
 h1 {
   font-family: "avenir next", sans-serif;
   font-size: 50px;
   line-height: 1.2;
   color: #1c2532;
   font-weight: 400; }
+  @media (max-width: 770px) {
+    h1 {
+      font-size: 26px; } }
 
 h4 {
   font-family: "roboto", sans-serif;

@@ -1,29 +1,34 @@
 {% load cms_tags menu_tags sekizai_tags %}
-<!doctype html>
-<html>
-    <head>
-        <title>{% block title %} Allen Institute Styleguide 2018 {% endblock title %}</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <link rel="stylesheet" href="/static/build/site.css"></link>
-        {% render_block "css" %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>{% block title %} Allen Institute Styleguide 2018 {% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/static/build/site.css"></link>
+
+    {% render_block "css" %}
 
 </head>
+
 <body>
     {% cms_toolbar %}
+
     <div class="container--full-width">
         <div class="navigation-container">
             <ul class="navigation">
                 {% show_menu 0 100 100 100 %}
             </ul>
-            
+
         </div>
-            {% block content %} {% endblock content %}
-        </div>
-        
-        {% static_placeholder "footer" %}
-        
-        {% render_block "js" %}
-        <script type="text/javascript" src="/static/build/site.js"></script>
-    </body>
+        {% block content %} {% endblock content %}
+    </div>
+
+    {% static_placeholder "footer" %} {% render_block "js" %}
+    <script type="text/javascript" src="/static/build/site.js"></script>
+</body>
+
 </html>
