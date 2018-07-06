@@ -135,6 +135,206 @@ label, p {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
+/****************************************************************
+
+    Naming conventions!
+
+    camelCase
+
+    prefix everything with its type, ie:
+
+    $colorBrand: #003056;
+    $fontPrimary: avenir;
+    $fontSizeM: 12px;
+    
+    Nothing in here should be component specific. Don't add things like $panelBGDark, instead
+    use one of the predefined colors like $colorNavyBlue or something.
+
+    Thanks!
+
+*****************************************************************/
+input[type="email"] {
+  padding: 0.8125rem 1.25rem;
+  border-radius: 1.25rem;
+  border: 1px solid #60a7e5;
+  background: transparent;
+  color: #a4a7ad;
+  margin-right: 1.25rem;
+  max-width: 100%; }
+  input[type="email"]:focus {
+    outline: none; }
+
+.application-tile {
+  width: 20.3125rem;
+  max-width: 100%;
+  padding: 2.5rem;
+  border: 0.0625rem solid #e8e9ea;
+  border-width: 0.0625rem; }
+
+.application-tile__thumbnail {
+  width: 8.125rem;
+  height: 8.125rem;
+  border-radius: 50%;
+  margin-bottom: 1.25rem; }
+
+.application-tile__header {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #1c2532;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0 0 0.625rem 0; }
+
+.application-tile__description {
+  font-family: "roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0.3px;
+  color: #1c2532;
+  color: #777c84; }
+
+.application-tile__link {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01875rem;
+  color: #60a7e5; }
+  .application-tile__link:hover {
+    color: #5392ca; }
+  .application-tile__link:active {
+    color: #90c2ed; }
+
+/****************************************************************
+
+    Naming conventions!
+
+    camelCase
+
+    prefix everything with its type, ie:
+
+    $colorBrand: #003056;
+    $fontPrimary: avenir;
+    $fontSizeM: 12px;
+    
+    Nothing in here should be component specific. Don't add things like $panelBGDark, instead
+    use one of the predefined colors like $colorNavyBlue or something.
+
+    Thanks!
+
+*****************************************************************/
+/*****************
+Typography
+*****************/
+/****************************************************************
+
+    Naming conventions!
+
+    camelCase
+
+    prefix everything with its type, ie:
+
+    $colorBrand: #003056;
+    $fontPrimary: avenir;
+    $fontSizeM: 12px;
+    
+    Nothing in here should be component specific. Don't add things like $panelBGDark, instead
+    use one of the predefined colors like $colorNavyBlue or something.
+
+    Thanks!
+
+*****************************************************************/
+/**********************
+Layout
+
+This file contains various layout options. Things like full width page containers that shrink to a minimum size,
+full width content sections, sidebars, etc. 
+
+***********************/
+.container--full-width {
+  width: 100%;
+  min-width: 17.5rem;
+  margin: 0 auto;
+  padding: 0; }
+
+.section--full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0 20px; }
+
+.section__content {
+  max-width: 100%;
+  width: 81.25rem;
+  margin: 40px auto; }
+
+/**********************
+Flexible Grid
+
+This defines our grid layout and how items within the grid should responde to changes in size.
+***********************/
+.grid, .flex-container {
+  display: flex; }
+
+.grid >, .flex-container > {
+  flex: 1; }
+
+/********************
+    Media query mixins
+
+    usage: @include Tablet { .mystyles { display: whatever; } }
+           @include Mobile { .someStyle { whatever: whatever; } }
+
+********************/
+@font-face {
+  font-family: 'roboto';
+  src: url("/static/font/Roboto-Regular.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("/static/font/Roboto-Medium.ttf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("/static/font/Roboto-Bold.ttf");
+  font-weight: 700; }
+
+/*************************************
+    Font Style mixins
+
+    usage: 
+        @include displayHeaderLarge();
+
+    override a rule in mixin:
+        @include displayHeaderLarge { font-size $fontSizeXS; }
+
+*************************************/
+h1 {
+  font-family: "avenir next", sans-serif;
+  font-size: 3.125rem;
+  line-height: 1.2;
+  color: #1c2532;
+  font-weight: 400; }
+  @media (max-width: 48.125rem) {
+    h1 {
+      font-size: 1.625rem; } }
+
+h4 {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  color: #1c2532; }
+
+label, p {
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
 .blog-post__header-container {
   padding: 0 1.25rem;
   width: 100%;

@@ -39,3 +39,9 @@ class HeroBanner(CMSPlugin):
 
 class NewsletterBox(CMSPlugin):
     call_to_action = models.CharField(default = "", max_length = 140)
+
+class ApplicationTile(CMSPlugin):
+    app_thumbnail = FilerImageField(null = True, blank = True, related_name="app_thumbnail", on_delete=models.SET_NULL)
+    app_name = models.CharField(max_length = 50, default = "Cell Types Database")
+    app_description = models.CharField(max_length = 140, default = "This section contains description copy for this Atlas or Database.")
+    app_url = models.CharField(max_length = 1000, default = "http://celltypes.brain-map.org/")

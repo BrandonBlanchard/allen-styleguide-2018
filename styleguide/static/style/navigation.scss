@@ -28,7 +28,7 @@
 
 // Site home
 .navigation-container > .navigation > .child > a {
-    @include TitleMediumBold();
+    @include titleMediumBold();
 
     color: $colorLight;
     text-decoration: none;
@@ -73,7 +73,7 @@
         height: 5rem;
         padding: 2rem 1.5625rem;
 
-        @include TitleMedium();
+        @include titleMedium();
         color: $colorTextLight;
         text-decoration: none;
         font-size: $fontSizeM;

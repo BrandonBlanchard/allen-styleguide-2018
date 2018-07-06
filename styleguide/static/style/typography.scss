@@ -22,6 +22,7 @@ Typography
     font-weight: 700;
 }
 
+
 /*************************************
     Font Style mixins
 
@@ -49,7 +50,7 @@ Typography
 }
 
 
-@mixin TitleMediumBold {
+@mixin titleMediumBold {
     // AvenirNext-Demibold / 26px
     font-family: $fontPrimary;
     font-size: $fontSizeXL;
@@ -64,7 +65,7 @@ Typography
     @content;
 }
 
-@mixin TitleMedium {
+@mixin titleMedium {
     // AvenirNext-Medium / 26px
     font-family: $fontPrimary;
     font-size: $fontSizeXL;
@@ -79,7 +80,7 @@ Typography
     @content;
 }
 
-@mixin TitleSmallUppercase {
+@mixin titleSmallUppercase {
     // Roboto-Bold / 16px
     font-family: $fontSecondary;
     font-size: $fontSizeM;
@@ -89,10 +90,10 @@ Typography
     letter-spacing: 0.5px;
     text-transform: uppercase;
 
-    
+    @content;
 }
 
-@mixin TitleSmall {
+@mixin titleSmall {
     // Roboto-Bold / 16px
     font-family: $fontSecondary;
     font-size: $fontSizeM;
@@ -102,7 +103,7 @@ Typography
     color: $colorNavyMedium;
 }
 
-@mixin BodyLarge {
+@mixin bodyLarge {
     // Roboto-Regular / 16px
     font-family: $fontSecondary;
     font-size: $fontSizeL;
@@ -112,7 +113,7 @@ Typography
     color: $colorNavyMedium;
 }
 
-@mixin BodyMedium {
+@mixin bodyMedium {
     // Roboto-Regular / 14px
     font-family: $fontSecondary;
     font-size: $fontSizeS;
@@ -122,17 +123,19 @@ Typography
     color: $colorNavyMedium;
 }
 
-@mixin DescriptionSmall {
+@mixin descriptionSmall {
     // Roboto-Regular / 14px
     font-family: $fontSecondary;
-    font-size: $fontSizeXL;
+    font-size: $fontSizeS;
     font-weight: $fontSecondaryRegular;
     line-height: 1.43;
     letter-spacing: 0.3px;
     color: $colorNavyMedium;
+
+    @content;
 }
 
-@mixin CaptionSmall {
+@mixin captionSmall {
     // Roboto-Regular / 12px;
     font-family: $fontSecondary;
     font-size: $fontSizeXS;
@@ -154,7 +157,7 @@ h3 {
 }
 
 h4 {
-    @include TitleSmall();
+    @include titleSmall();
 }
 
 h5 {

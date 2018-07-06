@@ -3,7 +3,7 @@ from cms.plugin_pool import plugin_pool
 from cms.models.pluginmodel import CMSPlugin
 from django.utils.translation import ugettext_lazy as _
 
-from .models import ColorSwatch, FlexContainer, ContentSection, HeroBanner, NewsletterBox
+from .models import ColorSwatch, FlexContainer, ContentSection, HeroBanner, NewsletterBox, ApplicationTile
 
 @plugin_pool.register_plugin
 class ColorSwatchPlugin(CMSPluginBase):
@@ -32,7 +32,7 @@ class FlexContainerPlugin(CMSPluginBase):
 class ContentSectionPlugin(CMSPluginBase):
     model = ContentSection
     name = _("Content Section")
-    render_template = 'section-content.html'
+    render_template = "section-content.html"
     allow_children = True
     cache = True
 
@@ -45,7 +45,7 @@ class ContentSectionPlugin(CMSPluginBase):
 class HeroBannerPlugin(CMSPluginBase):
     model = HeroBanner
     name = _("Hero Banner")
-    render_template = 'hero-banner.html'
+    render_template = "hero-banner.html"
     allow_children = False
     cache = True
 
@@ -57,10 +57,22 @@ class HeroBannerPlugin(CMSPluginBase):
 class NewsletterBoxPlugin(CMSPluginBase):
     model = NewsletterBox
     name = _("Newsletter Box")
-    render_template = 'newsletter-box.html'
+    render_template = "newsletter-box.html"
     allow_children = False
     cache = True
 
     def render (self, context, instance, placeholder):
         context = super(NewsletterBoxPlugin, self).render(context, instance, placeholder)
+        return context
+
+@plugin_pool.register_plugin
+class ApplicationTilePlugin(CMSPluginBase):
+    model = ApplicationTile
+    name = _("Application Tile")
+    render_template = "application-tile.html"
+    allow_children = False
+    cache = True
+
+    def render (self, context, instance, placeholder):
+        context = super(ApplicationTilePlugin, self).render(context, instance, placeholder)
         return context

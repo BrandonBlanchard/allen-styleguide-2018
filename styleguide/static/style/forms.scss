@@ -1,8 +1,5 @@
 @import 'variables';
 
-
-
-
 @mixin buttonPrimary {
 
     font-family: $fontSecondary;
@@ -30,6 +27,23 @@
     &:active {
         background-color: $colorBlueLight;
         outline: none;
+    }
+}
+
+@mixin buttonSecondary {
+    text-decoration: none;
+    font-size: $fontSizeS;
+    font-family: $fontSecondary;
+    font-weight: $fontSecondaryBold;
+    letter-spacing: 0.01875rem;
+    color: $colorBlueMedium;
+
+    &:hover {
+        color: $colorBlueDark;
+    }
+
+    &:active {
+        color: $colorBlueLight;
     }
 }
 
