@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'typography';
+@import 'forms';
+
+.application-tile {
+    width: 20.3125rem;
+    max-width: 100%;
+    padding: 2.5rem;
+    
+    border: 0.0625rem solid $colorCream;
+    border-width: 0.0625rem;
+}
+
+.application-tile__thumbnail {
+    width: 8.125rem;
+    height: 8.125rem;
+
+    border-radius: 50%;
+    margin-bottom: 1.25rem;
+}
+
+.application-tile__header {
+    @include titleSmallUppercase {
+        margin: 0 0 0.625rem 0;
+    };
+}
+
+.application-tile__description {
+    @include descriptionSmall {
+        color: $colorGreyMedium;
+    };
+}
+
+.application-tile__link {
+    @include buttonSecondary();
+}
