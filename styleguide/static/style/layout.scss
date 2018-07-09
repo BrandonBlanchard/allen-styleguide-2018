@@ -19,12 +19,14 @@ full width content sections, sidebars, etc.
     width: 100%;
     margin: 0;
     padding: 0 20px;
+    overflow: auto;
 }
 
 .section__content {
     max-width: 100%;
     width: $siteMaxWidth;
     margin: 40px auto;
+    overflow: auto;
 }
 
 /**********************

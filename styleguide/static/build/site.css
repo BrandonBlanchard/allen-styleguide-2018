@@ -63,12 +63,14 @@ full width content sections, sidebars, etc.
 .section--full-width {
   width: 100%;
   margin: 0;
-  padding: 0 20px; }
+  padding: 0 20px;
+  overflow: auto; }
 
 .section__content {
   max-width: 100%;
   width: 81.25rem;
-  margin: 40px auto; }
+  margin: 40px auto;
+  overflow: auto; }
 
 /**********************
 Flexible Grid
@@ -165,6 +167,7 @@ input[type="email"] {
     outline: none; }
 
 .application-tile {
+  background-color: #fff;
   width: 20.3125rem;
   max-width: 100%;
   padding: 2.5rem;
@@ -263,12 +266,14 @@ full width content sections, sidebars, etc.
 .section--full-width {
   width: 100%;
   margin: 0;
-  padding: 0 20px; }
+  padding: 0 20px;
+  overflow: auto; }
 
 .section__content {
   max-width: 100%;
   width: 81.25rem;
-  margin: 40px auto; }
+  margin: 40px auto;
+  overflow: auto; }
 
 /**********************
 Flexible Grid
@@ -418,12 +423,14 @@ full width content sections, sidebars, etc.
 .section--full-width {
   width: 100%;
   margin: 0;
-  padding: 0 20px; }
+  padding: 0 20px;
+  overflow: auto; }
 
 .section__content {
   max-width: 100%;
   width: 81.25rem;
-  margin: 40px auto; }
+  margin: 40px auto;
+  overflow: auto; }
 
 /**********************
 Flexible Grid
@@ -529,12 +536,14 @@ full width content sections, sidebars, etc.
 .section--full-width {
   width: 100%;
   margin: 0;
-  padding: 0 20px; }
+  padding: 0 20px;
+  overflow: auto; }
 
 .section__content {
   max-width: 100%;
   width: 81.25rem;
-  margin: 40px auto; }
+  margin: 40px auto;
+  overflow: auto; }
 
 /**********************
 Flexible Grid
@@ -615,12 +624,14 @@ full width content sections, sidebars, etc.
 .section--full-width {
   width: 100%;
   margin: 0;
-  padding: 0 20px; }
+  padding: 0 20px;
+  overflow: auto; }
 
 .section__content {
   max-width: 100%;
   width: 81.25rem;
-  margin: 40px auto; }
+  margin: 40px auto;
+  overflow: auto; }
 
 /**********************
 Flexible Grid
@@ -895,12 +906,14 @@ full width content sections, sidebars, etc.
 .section--full-width {
   width: 100%;
   margin: 0;
-  padding: 0 20px; }
+  padding: 0 20px;
+  overflow: auto; }
 
 .section__content {
   max-width: 100%;
   width: 81.25rem;
-  margin: 40px auto; }
+  margin: 40px auto;
+  overflow: auto; }
 
 /**********************
 Flexible Grid
@@ -975,12 +988,14 @@ full width content sections, sidebars, etc.
 .section--full-width {
   width: 100%;
   margin: 0;
-  padding: 0 20px; }
+  padding: 0 20px;
+  overflow: auto; }
 
 .section__content {
   max-width: 100%;
   width: 81.25rem;
-  margin: 40px auto; }
+  margin: 40px auto;
+  overflow: auto; }
 
 /**********************
 Flexible Grid
@@ -1211,12 +1226,14 @@ full width content sections, sidebars, etc.
 .section--full-width {
   width: 100%;
   margin: 0;
-  padding: 0 20px; }
+  padding: 0 20px;
+  overflow: auto; }
 
 .section__content {
   max-width: 100%;
   width: 81.25rem;
-  margin: 40px auto; }
+  margin: 40px auto;
+  overflow: auto; }
 
 /**********************
 Flexible Grid
@@ -1299,12 +1316,14 @@ full width content sections, sidebars, etc.
 .section--full-width {
   width: 100%;
   margin: 0;
-  padding: 0 20px; }
+  padding: 0 20px;
+  overflow: auto; }
 
 .section__content {
   max-width: 100%;
   width: 81.25rem;
-  margin: 40px auto; }
+  margin: 40px auto;
+  overflow: auto; }
 
 /**********************
 Flexible Grid
@@ -1451,12 +1470,14 @@ full width content sections, sidebars, etc.
 .section--full-width {
   width: 100%;
   margin: 0;
-  padding: 0 20px; }
+  padding: 0 20px;
+  overflow: auto; }
 
 .section__content {
   max-width: 100%;
   width: 81.25rem;
-  margin: 40px auto; }
+  margin: 40px auto;
+  overflow: auto; }
 
 /**********************
 Flexible Grid

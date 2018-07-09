@@ -3,6 +3,7 @@
 @import 'forms';
 
 .application-tile {
+    background-color: $colorLight;
     width: 20.3125rem;
     max-width: 100%;
     padding: 2.5rem;
@@ -20,6 +21,7 @@
 }
 
 .application-tile__header {
+
     @include titleSmallUppercase {
         margin: 0 0 0.625rem 0;
     };
