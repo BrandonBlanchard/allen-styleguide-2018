@@ -1,0 +1,76 @@
+@import 'variables';
+
+.typographic-sample {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 7rem;
+}
+
+.typographic-sample__name {
+    text-transform: capitalize;
+    border-bottom: 1px solid $colorNavyDark;
+    padding-bottom: 2.68rem;
+    margin: 0;
+}
+
+.typographic-sample__samples {
+
+}
+
+.typographic-sample__details {
+    width: 17rem;
+    margin-right: 6.8125rem;
+}
+
+.typographic-sample__font-name {
+    
+}
+
+.typographic-sample__weight {
+    font-size: $fontSizeXL;
+    font-family: inherit;
+    line-height: 2.17;
+}
+
+.typographic-sample__weight--regular {
+    @extend .typographic-sample__weight;
+    font-weight: $fontSecondaryRegular;
+}
+
+.typographic-sample__weight--medium {
+    @extend .typographic-sample__weight;
+    font-weight: $fontSecondaryMedium;
+}
+
+.typographic-sample__weight--bold {
+    @extend .typographic-sample__weight;
+    font-weight: $fontSecondaryBold;
+}
+
+.typographic-sample__large-letter {
+    font-size: 144px;
+    font-family: inherit;
+    line-height: 0.01;
+    padding-bottom: 6.36rem;
+    border-bottom: 0.0625rem solid $colorNavyDark;
+}
+
+.typographic-sample__alphabet--capital {
+    line-height: 1.3;
+    letter-spacing: 0.0625rem;
+    font-size: $fontSizeXXL;
+}
+
+.typographic-sample__alphabet--lower {
+    line-height: 1.3;
+    letter-spacing: 0.0625rem;
+    font-size: $fontSizeXXL;
+}
+
+.typographic-sample__numbers {
+    line-height: 1.3;
+    letter-spacing: 0.0625rem;
+    font-size: $fontSizeXXL;
+    margin-top: 1.25rem;
+}
