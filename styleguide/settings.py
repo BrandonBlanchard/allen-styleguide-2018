@@ -42,9 +42,9 @@ LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = True
+USE_I18N = False
 
-USE_L10N = True
+USE_L10N = False
 
 USE_TZ = True
 
@@ -174,12 +174,12 @@ CMS_PLACEHOLDER_CONF = {}
 DATABASES = {
     'default': {
         'CONN_MAX_AGE': 0,
-        'ENGINE': 'django.db.backends.sqlite3',
-        'HOST': 'localhost',
-        'NAME': 'project.db',
-        'PASSWORD': '',
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': '10.128.108.10',
+        'NAME': 'cmstest',
+        'PASSWORD': 'postgres',
         'PORT': '',
-        'USER': ''
+        'USER': 'postgres'
     }
 }
 

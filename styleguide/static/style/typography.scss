@@ -49,6 +49,15 @@ Typography
     @content;
 }
 
+@mixin headerMedium  {
+    font-family: $fontPrimary;
+    font-size: $fontSizeXXL;
+    line-height: 1.3;
+    color: $colorNavyMedium;
+    font-weight: 400;
+
+    @content;
+}
 
 @mixin titleMediumBold {
     // AvenirNext-Demibold / 26px
@@ -167,4 +176,44 @@ h5 {
 label, p {
     margin-top: 0;
     margin-bottom: 0.5rem;
+}
+
+.header-medium {
+    @include headerMedium();
+}
+
+.display-header-large {
+    @include displayHeaderLarge();
+}
+
+.title-medium-bold {
+    @include titleMediumBold();
+}
+
+.title-medium {
+    @include titleMedium();
+}
+
+.title-small-uppercase {
+    @include titleSmallUppercase();
+}
+
+.title-small {
+    @include titleSmall();
+}
+
+.body-large {
+    @include bodyLarge();
+}
+
+.body-medium {
+    @include bodyMedium();
+}
+
+.description-small {
+    @include descriptionSmall();
+}
+
+.caption-small {
+    @include captionSmall();
 }

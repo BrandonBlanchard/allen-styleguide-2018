@@ -47,6 +47,185 @@
     }
 }
 
+// Welcome to mixin hell. Enjoy your stay.
+@mixin button ($style, $color) {
+    // Default styles
+    display: block;
+    font-family: $fontSecondary;
+    font-weight: $fontSecondaryBold;
+    border-radius: 1.375rem;
+    text-decoration: none;
+
+    transition: background-color ease 150ms;
+    
+    // Default Colors
+    // Affects the primary and secondary button styles
+    @if $color == "blue" {
+        color: $colorLight;
+        background-color: $colorBrandLight;
+
+        &:hover {
+            background-color: $colorBlueDark;
+        }
+
+        &:active {
+            background-color: $colorBlueLight;
+        }
+    }
+
+    @if $color == "green" {
+        color: $colorLight;
+        background-color: $colorGreenMedium;
+
+        &:hover {
+            background-color: $colorGreenDark;
+        }
+
+        &:active {
+            background-color: $colorGreenLight;
+        }
+    }
+
+    @if $color == "yellow" {
+        color: $colorNavyDark;
+        background-color: $colorYellowLight;
+
+        &:hover {
+            background-color: $colorYellowMedium;
+        }
+
+        &:active {
+            background-color: $colorYellowDark;
+        }
+    }
+
+    @if $color == "black" {
+        color: $colorLight;
+        background-color: $colorNavyDark;
+
+        &:hover {
+            background-color: $colorNavyLight;
+        }
+
+        &:active {
+            background-color: $colorNavyDark;
+        }
+    }
+
+    // Button Style
+    @if $style == "primary" {
+        padding: 0.75rem 1.125rem;
+        font-size: $fontSizeL;
+    }
+    
+    @if $style == "secondary" {
+        padding: 0.75rem 1.125rem;
+        font-size: $fontSizeL;
+        border-width: 0.0625rem;
+        border-style: solid;
+        
+        // Secondary buttons have a white background and a colored border
+        // these styles override the above rules to achieve this style
+        @if $color == "blue" {
+            color: $colorNavyDark;
+            border-color: $colorBrandLight;
+            background-color: $colorLight;
+
+            &:active,
+            &:hover {
+                color: $colorLight;
+            }
+        }
+    
+        @if $color == "green" {
+            color: $colorNavyDark;
+            border-color: $colorGreenMedium;
+            background-color: $colorLight;
+
+            &:active,
+            &:hover {
+                color: $colorLight;
+            }
+
+        }
+    
+        @if $color == "yellow" {
+            color: $colorNavyDark;
+            border-color: $colorYellowLight;
+            background-color: $colorLight;
+        }
+    
+        @if $color == "black" {
+            color: $colorLight;
+            background-color: $colorLight;
+            background-color: $colorNavyDark;
+
+            &:active,
+            &:hover {
+                color: $colorLight;
+            }
+        }
+
+    }
+
+    @if $style == "compact" {
+        padding: 0.4375rem 1.25rem;
+        font-size: $fontSizeS;
+        line-height: 1;
+    }
+
+    @if $style == "text" {
+        padding: 0;
+        font-size: $fontSizeS;
+
+        @if $color == "blue" {
+            color: $colorBrandLight;
+        }
+    
+        @if $color == "green" {
+            color: $colorGreenMedium;
+        }
+    
+        @if $color == "black" {
+            color: $colorNavyDark;
+        }
+
+    }
+
+}
+
+.button {
+    &-primary {
+        &-blue { @include button("primary", "blue"); }
+
+        &-green { @include button("primary", "green"); }
+
+        &-yellow { @include button("primary", "yellow"); }
+
+        &-black { @include button("primary", "black");}
+    }
+
+    &-secondary {
+        &-blue { @include button("secondary", "blue"); }
+
+        &-green { @include button("secondary", "green"); }
+
+        &-yellow { @include button("secondary", "yellow"); }
+
+        &-black { @include button("secondary", "black"); }
+    }
+
+    &-compact {
+        &-blue { @include button("compact", "blue"); }
+
+        &-green { @include button("compact", "green"); }
+
+        &-yellow { @include button("compact", "yellow"); }
+
+        &-black { @include button("compact", "black"); }
+    }
+}
+
 input[type="email"] {
     padding: 0.8125rem 1.25rem;
     border-radius: 1.25rem;

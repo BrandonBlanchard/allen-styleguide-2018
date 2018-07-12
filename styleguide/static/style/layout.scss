@@ -81,3 +81,15 @@ This defines our grid layout and how items within the grid should responde to ch
         @content;
     }
 }
+
+.expand {
+    margin-bottom: 1.25rem;
+}
+
+.expand-medium {
+    margin-bottom: 2.5rem;
+}
+
+.expand-large {
+    margin-bottom: 3.75rem;
+}

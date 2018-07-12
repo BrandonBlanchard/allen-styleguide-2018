@@ -13,7 +13,6 @@ This starts the dev server as well as a webpack instance that watches our static
 
 This will start the dev server and webpack in a single window.. this is currently a little janky, god speed.
 
-
 ## Setting up new content types ##
     * Write plugin code in `styleguide/cms_plugin.py`
     * Add model code in `styleguide/models.py`
@@ -28,5 +27,5 @@ This will start the dev server and webpack in a single window.. this is currentl
     * add an import for your new file in the `main.scss` or `main.js`.
 
 
-### Authors ###
+## Authors ##
 Brandon Blanchard, Felix Lee, Tim Dolbear

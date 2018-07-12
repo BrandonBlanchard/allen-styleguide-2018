@@ -3,7 +3,7 @@ from cms.plugin_pool import plugin_pool
 from cms.models.pluginmodel import CMSPlugin
 from django.utils.translation import ugettext_lazy as _
 
-from .models import ColorSwatch, FlexContainer, ContentSection, HeroBanner, NewsletterBox, ApplicationTile
+from .models import ColorSwatch, FlexContainer, ContentSection, HeroBanner, NewsletterBox, ApplicationTile, TypographicSample, FlexColumn, Button
 
 @plugin_pool.register_plugin
 class ColorSwatchPlugin(CMSPluginBase):
@@ -75,4 +75,41 @@ class ApplicationTilePlugin(CMSPluginBase):
 
     def render (self, context, instance, placeholder):
         context = super(ApplicationTilePlugin, self).render(context, instance, placeholder)
+        return context
+
+
+@plugin_pool.register_plugin
+class TypographicSamplePlugin(CMSPluginBase):
+    model = TypographicSample
+    name = _("Typographic Sample")
+    render_template = "typographic-sample.html"
+    allow_children = False
+    cache = True
+
+    def render (self, context, instance, placeholder):
+        context = super(TypographicSamplePlugin, self).render(context, instance, placeholder)
+        return context
+
+@plugin_pool.register_plugin
+class FlexColumnPlugin(CMSPluginBase):
+    model = FlexColumn
+    name = _("Flex Column")
+    render_template = "flex-column.html"
+    allow_children = True
+    cache = True
+
+    def render (self, context, instance, placeholder):
+        context = super(FlexColumnPlugin, self).render(context, instance, placeholder)
+        return context
+
+@plugin_pool.register_plugin
+class ButtonPlugin(CMSPluginBase):
+    model = Button
+    name = _("Button Link")
+    render_template = "button-link.html"
+    allow_children = False
+    cache = True
+
+    def render (self, context, instance, placeholder):
+        context = super(ButtonPlugin, self).render(context, instance, placeholder)
         return context
