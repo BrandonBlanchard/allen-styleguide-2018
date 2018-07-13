@@ -1,53 +1,7 @@
 @import 'variables';
 
-@mixin buttonPrimary {
-
-    font-family: $fontSecondary;
-    font-weight: $fontSecondaryBold;
-    font-size: $fontSizeM;
-    letter-spacing: 0.01875rem;
-    line-height: 1.25;
-    text-align: center;
-
-    padding: 0.812rem 1.25rem;
-    background-color: $colorBrandLight;
-    color: $colorLight;
-    
-    border-radius: 2.5rem;
-    border: none;
-
-    cursor: pointer;
-    outline: none;
-
-    &:hover {
-        background-color: $colorBlueDark;
-        outline: none;
-    }
-    
-    &:active {
-        background-color: $colorBlueLight;
-        outline: none;
-    }
-}
-
-@mixin buttonSecondary {
-    text-decoration: none;
-    font-size: $fontSizeS;
-    font-family: $fontSecondary;
-    font-weight: $fontSecondaryBold;
-    letter-spacing: 0.01875rem;
-    color: $colorBlueMedium;
-
-    &:hover {
-        color: $colorBlueDark;
-    }
-
-    &:active {
-        color: $colorBlueLight;
-    }
-}
-
 // Welcome to mixin hell. Enjoy your stay.
+// The actual class definitions are below this... mess.
 @mixin button ($style, $color) {
     // Default styles
     display: block;
@@ -175,25 +129,68 @@
     }
 
     @if $style == "text" {
+        display: inline-block;
         padding: 0;
         font-size: $fontSizeS;
+        text-decoration: none;
+        letter-spacing: 0.01875rem;
+        background: transparent;
+
+        &:after {
+            content: "\f061";
+            font-family: $fontIcon;
+            display: inline-block;
+            text-rendering: auto;
+            line-height: 1;
+        }
 
         @if $color == "blue" {
             color: $colorBrandLight;
+            
+            &:hover {
+                color: $colorBlueDark;
+                background: transparent;
+             }
+
+            &:active {
+                color: $colorBlueLight;
+                background: transparent;
+             }
         }
     
         @if $color == "green" {
             color: $colorGreenMedium;
+
+            &:hover {
+                background: transparent;
+                color: $colorGreenDark;
+             }
+
+            &:active {
+                background: transparent;
+                color: $colorGreenLight;
+             }
         }
-    
+
         @if $color == "black" {
             color: $colorNavyDark;
+
+            &:hover { 
+                background: transparent;
+                color: $colorNavyLight;
+            }
+
+            &:active { 
+                background: transparent;
+                color: $colorNavyDark;
+            }
         }
 
     }
 
 }
 
+// Css class definitions!
 .button {
     &-primary {
         &-blue { @include button("primary", "blue"); }
@@ -223,6 +220,14 @@
         &-yellow { @include button("compact", "yellow"); }
 
         &-black { @include button("compact", "black"); }
+    }
+
+    &-text {
+        &-blue { @include button("text", "blue"); }
+
+        &-green { @include button("text", "green"); }
+
+        &-black { @include button("text", "black"); }
     }
 }
 

@@ -154,23 +154,29 @@ Typography
     color: $colorNavyMedium;
 }
 
+@mixin labelLight {
+    font-family: $fontSecondary;
+    font-size: $fontSizeS;
+    font-weight: $fontSecondaryBold;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    color: $colorNavyLight;
+}    
+
 h1 {
     @include displayHeaderLarge();
 }
 
-h2 {
-}
+h2 {}
 
-h3 {
-    
-}
+h3 {}
 
 h4 {
     @include titleSmall();
 }
 
 h5 {
-
+    @include labelLight();
 }
 
 label, p {

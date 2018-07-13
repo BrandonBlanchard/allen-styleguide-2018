@@ -14,9 +14,13 @@ Import any scss files you want included in the main bundle below.
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -35,9 +39,13 @@ Typography
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -142,6 +150,14 @@ h4 {
   letter-spacing: 0.5px;
   color: #1c2532; }
 
+h5 {
+  font-family: "roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  color: #616770; }
+
 label, p {
   margin-top: 0;
   margin-bottom: 0.5rem; }
@@ -238,9 +254,13 @@ label, p {
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -472,6 +492,105 @@ label, p {
   .button-compact-black:active {
     background-color: #05070a; }
 
+.button-text-blue {
+  display: block;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  border-radius: 1.375rem;
+  text-decoration: none;
+  transition: background-color ease 150ms;
+  color: #fff;
+  background-color: #60a7e5;
+  display: inline-block;
+  padding: 0;
+  font-size: 0.875rem;
+  text-decoration: none;
+  letter-spacing: 0.01875rem;
+  background: transparent;
+  color: #60a7e5; }
+  .button-text-blue:hover {
+    background-color: #5392ca; }
+  .button-text-blue:active {
+    background-color: #90c2ed; }
+  .button-text-blue:after {
+    content: "\F061";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    text-rendering: auto;
+    line-height: 1; }
+  .button-text-blue:hover {
+    color: #5392ca;
+    background: transparent; }
+  .button-text-blue:active {
+    color: #90c2ed;
+    background: transparent; }
+
+.button-text-green {
+  display: block;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  border-radius: 1.375rem;
+  text-decoration: none;
+  transition: background-color ease 150ms;
+  color: #fff;
+  background-color: #64a869;
+  display: inline-block;
+  padding: 0;
+  font-size: 0.875rem;
+  text-decoration: none;
+  letter-spacing: 0.01875rem;
+  background: transparent;
+  color: #64a869; }
+  .button-text-green:hover {
+    background-color: #4f8553; }
+  .button-text-green:active {
+    background-color: #93c396; }
+  .button-text-green:after {
+    content: "\F061";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    text-rendering: auto;
+    line-height: 1; }
+  .button-text-green:hover {
+    background: transparent;
+    color: #4f8553; }
+  .button-text-green:active {
+    background: transparent;
+    color: #93c396; }
+
+.button-text-black {
+  display: block;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  border-radius: 1.375rem;
+  text-decoration: none;
+  transition: background-color ease 150ms;
+  color: #fff;
+  background-color: #05070a;
+  display: inline-block;
+  padding: 0;
+  font-size: 0.875rem;
+  text-decoration: none;
+  letter-spacing: 0.01875rem;
+  background: transparent;
+  color: #05070a; }
+  .button-text-black:hover {
+    background-color: #616770; }
+  .button-text-black:active {
+    background-color: #05070a; }
+  .button-text-black:after {
+    content: "\F061";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    text-rendering: auto;
+    line-height: 1; }
+  .button-text-black:hover {
+    background: transparent;
+    color: #616770; }
+  .button-text-black:active {
+    background: transparent;
+    color: #05070a; }
+
 input[type="email"] {
   padding: 0.8125rem 1.25rem;
   border-radius: 1.25rem;
@@ -517,16 +636,37 @@ input[type="email"] {
   color: #777c84; }
 
 .application-tile__link {
-  text-decoration: none;
-  font-size: 0.875rem;
+  display: block;
   font-family: "roboto", sans-serif;
   font-weight: 700;
+  border-radius: 1.375rem;
+  text-decoration: none;
+  transition: background-color ease 150ms;
+  color: #fff;
+  background-color: #60a7e5;
+  display: inline-block;
+  padding: 0;
+  font-size: 0.875rem;
+  text-decoration: none;
   letter-spacing: 0.01875rem;
+  background: transparent;
   color: #60a7e5; }
   .application-tile__link:hover {
-    color: #5392ca; }
+    background-color: #5392ca; }
   .application-tile__link:active {
-    color: #90c2ed; }
+    background-color: #90c2ed; }
+  .application-tile__link:after {
+    content: "\F061";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    text-rendering: auto;
+    line-height: 1; }
+  .application-tile__link:hover {
+    color: #5392ca;
+    background: transparent; }
+  .application-tile__link:active {
+    color: #90c2ed;
+    background: transparent; }
 
 /****************************************************************
 
@@ -534,9 +674,13 @@ input[type="email"] {
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -555,9 +699,13 @@ Typography
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -661,6 +809,14 @@ h4 {
   line-height: 1.25;
   letter-spacing: 0.5px;
   color: #1c2532; }
+
+h5 {
+  font-family: "roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  color: #616770; }
 
 label, p {
   margin-top: 0;
@@ -786,9 +942,13 @@ label, p {
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -807,9 +967,13 @@ Typography
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -913,6 +1077,14 @@ h4 {
   line-height: 1.25;
   letter-spacing: 0.5px;
   color: #1c2532; }
+
+h5 {
+  font-family: "roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  color: #616770; }
 
 label, p {
   margin-top: 0;
@@ -1083,7 +1255,8 @@ This defines our grid layout and how items within the grid should responde to ch
   width: 100%;
   overflow-x: hidden;
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  margin-bottom: 1rem; }
 
 /****************************************************************
 
@@ -1091,9 +1264,13 @@ This defines our grid layout and how items within the grid should responde to ch
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -1112,9 +1289,13 @@ Typography
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -1218,6 +1399,14 @@ h4 {
   line-height: 1.25;
   letter-spacing: 0.5px;
   color: #1c2532; }
+
+h5 {
+  font-family: "roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  color: #616770; }
 
 label, p {
   margin-top: 0;
@@ -1559,9 +1748,13 @@ This defines our grid layout and how items within the grid should responde to ch
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -1580,9 +1773,13 @@ Typography
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -1686,6 +1883,14 @@ h4 {
   line-height: 1.25;
   letter-spacing: 0.5px;
   color: #1c2532; }
+
+h5 {
+  font-family: "roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  color: #616770; }
 
 label, p {
   margin-top: 0;
@@ -1863,9 +2068,13 @@ label, p {
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -2097,6 +2306,105 @@ label, p {
   .button-compact-black:active {
     background-color: #05070a; }
 
+.button-text-blue {
+  display: block;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  border-radius: 1.375rem;
+  text-decoration: none;
+  transition: background-color ease 150ms;
+  color: #fff;
+  background-color: #60a7e5;
+  display: inline-block;
+  padding: 0;
+  font-size: 0.875rem;
+  text-decoration: none;
+  letter-spacing: 0.01875rem;
+  background: transparent;
+  color: #60a7e5; }
+  .button-text-blue:hover {
+    background-color: #5392ca; }
+  .button-text-blue:active {
+    background-color: #90c2ed; }
+  .button-text-blue:after {
+    content: "\F061";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    text-rendering: auto;
+    line-height: 1; }
+  .button-text-blue:hover {
+    color: #5392ca;
+    background: transparent; }
+  .button-text-blue:active {
+    color: #90c2ed;
+    background: transparent; }
+
+.button-text-green {
+  display: block;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  border-radius: 1.375rem;
+  text-decoration: none;
+  transition: background-color ease 150ms;
+  color: #fff;
+  background-color: #64a869;
+  display: inline-block;
+  padding: 0;
+  font-size: 0.875rem;
+  text-decoration: none;
+  letter-spacing: 0.01875rem;
+  background: transparent;
+  color: #64a869; }
+  .button-text-green:hover {
+    background-color: #4f8553; }
+  .button-text-green:active {
+    background-color: #93c396; }
+  .button-text-green:after {
+    content: "\F061";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    text-rendering: auto;
+    line-height: 1; }
+  .button-text-green:hover {
+    background: transparent;
+    color: #4f8553; }
+  .button-text-green:active {
+    background: transparent;
+    color: #93c396; }
+
+.button-text-black {
+  display: block;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  border-radius: 1.375rem;
+  text-decoration: none;
+  transition: background-color ease 150ms;
+  color: #fff;
+  background-color: #05070a;
+  display: inline-block;
+  padding: 0;
+  font-size: 0.875rem;
+  text-decoration: none;
+  letter-spacing: 0.01875rem;
+  background: transparent;
+  color: #05070a; }
+  .button-text-black:hover {
+    background-color: #616770; }
+  .button-text-black:active {
+    background-color: #05070a; }
+  .button-text-black:after {
+    content: "\F061";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    text-rendering: auto;
+    line-height: 1; }
+  .button-text-black:hover {
+    background: transparent;
+    color: #616770; }
+  .button-text-black:active {
+    background: transparent;
+    color: #05070a; }
+
 input[type="email"] {
   padding: 0.8125rem 1.25rem;
   border-radius: 1.25rem;
@@ -2114,9 +2422,13 @@ input[type="email"] {
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -2135,9 +2447,13 @@ Typography
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -2241,6 +2557,14 @@ h4 {
   line-height: 1.25;
   letter-spacing: 0.5px;
   color: #1c2532; }
+
+h5 {
+  font-family: "roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  color: #616770; }
 
 label, p {
   margin-top: 0;
@@ -2423,28 +2747,26 @@ This defines our grid layout and how items within the grid should responde to ch
 .newsletter-box__input {
   width: 21.5636rem;
   max-width: 26.25rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  float: left; }
 
 .newsletter-box__submit {
+  border: none;
+  display: inline-block;
+  display: block;
   font-family: "roboto", sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.01875rem;
-  line-height: 1.25;
-  text-align: center;
-  padding: 0.812rem 1.25rem;
-  background-color: #60a7e5;
+  border-radius: 1.375rem;
+  text-decoration: none;
+  transition: background-color ease 150ms;
   color: #fff;
-  border-radius: 2.5rem;
-  border: none;
-  cursor: pointer;
-  outline: none; }
+  background-color: #60a7e5;
+  padding: 0.75rem 1.125rem;
+  font-size: 1.0625rem; }
   .newsletter-box__submit:hover {
-    background-color: #5392ca;
-    outline: none; }
+    background-color: #5392ca; }
   .newsletter-box__submit:active {
-    background-color: #90c2ed;
-    outline: none; }
+    background-color: #90c2ed; }
 
 /****************************************************************
 
@@ -2452,9 +2774,13 @@ This defines our grid layout and how items within the grid should responde to ch
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -2483,9 +2809,13 @@ Typography
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -2590,6 +2920,14 @@ h4 {
   letter-spacing: 0.5px;
   color: #1c2532; }
 
+h5 {
+  font-family: "roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  color: #616770; }
+
 label, p {
   margin-top: 0;
   margin-bottom: 0.5rem; }
@@ -2686,9 +3024,13 @@ label, p {
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     

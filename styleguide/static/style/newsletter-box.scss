@@ -44,8 +44,12 @@
     width: 21.5636rem;
     max-width: 26.25rem;
     margin-bottom: 1rem;
+    float: left;
 }
 
 .newsletter-box__submit {
-    @include buttonPrimary(); 
+    border: none;
+    display: inline-block;
+
+    @include button("primary", "blue");
 }

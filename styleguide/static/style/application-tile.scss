@@ -34,5 +34,5 @@
 }
 
 .application-tile__link {
-    @include buttonSecondary();
+    @include button("text", "blue");
 }

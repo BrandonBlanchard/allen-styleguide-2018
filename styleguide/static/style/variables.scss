@@ -4,9 +4,13 @@
 
     camelCase
 
-    prefix everything with its type, ie:
+    prefix everything with its type,
+    then its definition,
+    then its modifier, ie:
 
     $colorBrand: #003056;
+    $colorBrandLight: $394823;
+
     $fontPrimary: avenir;
     $fontSizeM: 12px;
     
@@ -20,7 +24,7 @@
 // Fonts
 $fontPrimary: 'avenir next', sans-serif;
 $fontSecondary: 'roboto', sans-serif;
-
+$fontIcon: "Font Awesome 5 Free";
 
 $fontPrimaryRegular: 400;
 // Medium
