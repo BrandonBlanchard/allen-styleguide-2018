@@ -1,2 +1,2 @@
 [config]
-command = bash post-deployment.sh
+command = bash post-deploy.sh
