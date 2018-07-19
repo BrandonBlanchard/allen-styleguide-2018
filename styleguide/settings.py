@@ -175,11 +175,11 @@ DATABASES = {
     'default': {
         'CONN_MAX_AGE': 0,
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': '10.128.108.10',
-        'NAME': 'cmstest',
-        'PASSWORD': 'postgres',
-        'PORT': '',
-        'USER': 'postgres'
+        'HOST': 'webapp-postgresqldbserver-d4db18d1-0523.postgres.database.azure.com',
+        'NAME': 'styleguide',
+        'PASSWORD': 'H@mmyL0ng',
+        'PORT': '5432',
+        'USER': 'styleguide_user@webapp-postgresqldbserver-d4db18d1-0523'
     }
 }
 
