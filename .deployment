@@ -1,2 +1,2 @@
 [config]
-command = bash post-deploy.sh && python manage.py runserver
+command = bash post-deploy.sh
