@@ -1,2 +1,2 @@
 [config]
-command = bash env\scripts\python -m pip install -r requirements.txt && python manage.py run-migrations && python manage.py runserver
+command = bash python -m pip install -r requirements.txt && python manage.py run-migrations && python manage.py runserver
