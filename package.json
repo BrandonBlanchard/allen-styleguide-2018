@@ -4,7 +4,7 @@
   "description": "Allen Institute styleguide 2018",
   "main": "none",
   "scripts": {
-    "start": "pip install -r requirements.txt && python manage.py run-migrations && python manage.py runserver",
+    "start": "python manage.py runserver",
     "stop": "pkill python || pkill node",
     "flush": "python manage.py flush",
     "django-help": "python manage.py help",
