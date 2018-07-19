@@ -1,2 +1,2 @@
 [config]
-command = bash python -m pip install -r requirements.txt && python manage.py run-migrations && python manage.py runserver
+command = bash sudo python -m pip install -r requirements.txt && sudo python ./manage.py run-migrations && sudo python ./manage.py runserver
